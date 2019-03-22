@@ -1,3 +1,30 @@
+:root {
+  /* 色の設定 基本的にこの色しか使わない */
+  --xcolor-black: #23263A;
+  --xcolor-white: #F0EFF3;
+  --xcolor-gray: #C7C2CE;
+  --xcolor-blue: #454D7D;
+  --xcolor-yellow: #CCFF00;
+}
+
+.theme-black {
+  color: var(--xcolor-white);
+  background-color: var(--xcolor-black);
+}
+
+.theme-white {
+  color: var(--xcolor-black);
+  background-color: var(--xcolor-white);
+}
+
+.theme-gray {
+  color: var(--xcolor-black);
+  background-color: var(--xcolor-gray);
+}
+
+
+
+
 .App {
   text-align: center;
 }
@@ -31,3 +58,5 @@
     transform: rotate(360deg);
   }
 }
+
+
