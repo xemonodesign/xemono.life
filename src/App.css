@@ -6,6 +6,34 @@
   --xcolor-blue: #454D7D;
   --xcolor-yellow: #CCFF00;
 }
+@media screen and (max-width: 1024px) {
+  /* 1024pxまでの幅の場合に適応される */
+    :root {
+      --basic-margin: 100px;
+      --heading-number-display: inline-block;
+    }
+  }
+  @media screen and (max-width: 768px) {
+  /* 768pxまでの幅の場合に適応される */
+    :root {
+      --basic-margin: 50px;
+      --heading-number-display: none;
+    }
+  }
+  @media screen and (max-width: 480px) {
+  /* 480pxまでの幅の場合に適応される */
+    :root {
+      --basic-margin: 32px;
+      --heading-number-display: none;
+    }
+  }
+  @media screen and (max-width: 320px) {
+  /* 320pxまでの幅の場合に適応される */
+    :root {
+      --basic-margin: 20px;
+      --heading-number-display: none;
+    }
+  }
 
 .theme-black {
   color: var(--xcolor-white);
@@ -23,7 +51,15 @@
 }
 
 
+.layout-box{
+  min-height: 100vh;
+  width: 100vw;
+  padding: var(--basic-margin);
+}
 
+h1 {
+
+}
 
 .App {
   text-align: center;
@@ -59,4 +95,32 @@
   }
 }
 
+
+.main-heading {
+  margin: 96px 0 32px;
+  position: relative;
+  text-align: left;
+}
+.main-heading::before{
+  content: '';
+  display: block;
+  position: relative;
+  top: 100px;
+  left: 0;
+  width: 100px;
+  height: 6px;
+  background: var(--xcolor-yellow);
+}
+.main-heading .number {
+    font-size: 68px; 
+    line-height: 68px; 
+    display: var(--heading-number-display);
+    margin-right: 32px;
+    width: 100px;
+    text-align: center;
+}
+.main-heading .bun {
+  font-size: 32px;
+  line-height: 68px;
+}
 
