@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
 const ContentBox = (props) => (
-    <div className={`theme-${props.theme} layout-box`}>
+    <section className={`theme-${props.theme} layout-box`}>
         {props.children}
-    </div>
+    </section>
 )
 
 export default ContentBox;

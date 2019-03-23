@@ -5,14 +5,17 @@
   --xcolor-gray: #C7C2CE;
   --xcolor-blue: #454D7D;
   --xcolor-yellow: #CCFF00;
+
+  /* 文字サイズ */
+  --font-large: 32px;
+  --font-medium: 24px;
+  --font-small: 16px;
+  
 }
-@media screen and (max-width: 1024px) {
-  /* 1024pxまでの幅の場合に適応される */
     :root {
       --basic-margin: 100px;
       --heading-number-display: inline-block;
     }
-  }
   @media screen and (max-width: 768px) {
   /* 768pxまでの幅の場合に適応される */
     :root {
@@ -34,6 +37,24 @@
       --heading-number-display: none;
     }
   }
+
+body{
+  font-size: var(--font-medium);
+}
+
+a {
+  color: var(--xcolor-white);
+  display: inline-block;
+  padding: 5px;
+  text-decoration-color: var(--xcolor-blue);
+}
+
+a:hover, a:active{
+  background-color:var(--xcolor-yellow);
+  color: var(--xcolor-black);
+  transition: 0.2s;
+  text-decoration: none;
+}
 
 .theme-black {
   color: var(--xcolor-white);
@@ -57,14 +78,25 @@
   padding: var(--basic-margin);
 }
 
-h1 {
-
+.layout-minibox{
+  width: 100vw;
+  padding: calc(var(--basic-margin)/2) var(--basic-margin) ;
 }
+
+
 
 .App {
-  text-align: center;
+
 }
 
+/*
+.four-grid{
+  display: grid;
+  gap: calc(var(--basic-margin) / 2 );
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+*/
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -97,9 +129,9 @@ h1 {
 
 
 .main-heading {
-  margin: 96px 0 32px;
   position: relative;
   text-align: left;
+  grid-column: 1 / 5;
 }
 .main-heading::before{
   content: '';
@@ -112,15 +144,49 @@ h1 {
   background: var(--xcolor-yellow);
 }
 .main-heading .number {
-    font-size: 68px; 
-    line-height: 68px; 
+    font-size: calc(var(--font-large) *2); 
+    line-height: calc(var(--font-large) *2.5); 
     display: var(--heading-number-display);
     margin-right: 32px;
     width: 100px;
     text-align: center;
 }
 .main-heading .bun {
-  font-size: 32px;
-  line-height: 68px;
+  font-size: var(--font-large);
+  line-height: calc(var(--font-large) *2.5); 
+  vertical-align: top;
 }
 
+
+.right{
+  display: inline-block;
+  text-align: right;
+  margin-right: 0;
+}
+
+.left{
+  display: inline-block;
+  text-align: left;
+  margin-left: 0;
+}
+
+.flex-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav{
+  border-bottom: var(--xcolor-gray) 1px solid;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.text-large{
+  font-size: var(--font-large);
+}
+
+.bold{
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
