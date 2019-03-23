@@ -54,6 +54,36 @@ a:hover, a:active, a:focus{
   text-decoration: none;
 }
 
+h2 {
+  font-size: var(--font-medium);
+  color: var(--xcolor-blue);
+  padding: 10px 0;
+}
+
+.news {
+  list-style-type: none;
+  border-top: var(--xcolor-gray) 1px solid;
+  border-bottom: var(--xcolor-gray) 1px solid;
+  padding: 20px 10px;
+  font-size: var(--font-medium);
+}
+
+.news .date:after{
+  content: '>';
+  color: var(--xcolor-gray);
+  margin: 20px;
+}
+
+.gray-box{
+  margin-top: 50px;
+  display: flex;
+  background: var(--xcolor-gray);
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .theme-black {
   color: var(--xcolor-white);
   background-color: var(--xcolor-black);
@@ -82,11 +112,6 @@ a:hover, a:active, a:focus{
 }
 
 
-
-.App {
-
-}
-
 .vertical-center{
   align-self: center;
 }
@@ -100,41 +125,11 @@ a:hover, a:active, a:focus{
   gap: calc(var(--basic-margin) / 2 );
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 .main-heading {
   position: relative;
   text-align: left;
-  grid-column: 1 / 5;
+  margin-bottom: 80px;
 }
 .main-heading::before{
   content: '';
@@ -173,7 +168,7 @@ a:hover, a:active, a:focus{
   margin-left: 0;
 }
 
-.bottom-left{
+.bottom-left {
   align-self: flex-end;
   justify-self: end;
   margin-top: auto;
@@ -181,18 +176,18 @@ a:hover, a:active, a:focus{
 }
 
 
-.flex-bar{
+.flex-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.flex-column{
+.flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.flex-row{
+.flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -202,7 +197,7 @@ a:hover, a:active, a:focus{
 }
 
 
-nav{
+nav {
   border-bottom: var(--xcolor-gray) 1px solid;
   padding-bottom: 20px;
   margin-bottom: 20px;
