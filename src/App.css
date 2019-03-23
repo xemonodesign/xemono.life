@@ -20,22 +20,16 @@
       --basic-margin: 100px;
       --heading-number-display: inline-block;
     }
-  @media screen and (max-width: 768px) {
-  /* 768pxまでの幅の場合に適応される */
+  @media (width < 768px) {
     :root {
       --basic-margin: 50px;
       --heading-number-display: none;
     }
-  }
-  @media screen and (max-width: 480px) {
-  /* 480pxまでの幅の場合に適応される */
-    :root {
-      --basic-margin: 32px;
-      --heading-number-display: none;
+    .grid {
+      column-count: 1 !important;
     }
   }
-  @media screen and (max-width: 320px) {
-  /* 320pxまでの幅の場合に適応される */
+  @media (width < 480px) {
     :root {
       --basic-margin: 20px;
       --heading-number-display: none;
@@ -93,14 +87,19 @@ a:hover, a:active, a:focus{
 
 }
 
-/*
-.four-grid{
-  display: grid;
-  gap: calc(var(--basic-margin) / 2 );
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.vertical-center{
+  align-self: center;
+}
+
+.grid-r-one{
   grid-template-rows: 1fr;
 }
-*/
+
+.grid{
+  display: grid;
+  gap: calc(var(--basic-margin) / 2 );
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -192,6 +191,16 @@ a:hover, a:active, a:focus{
   display: flex;
   flex-direction: column;
 }
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 
 nav{
   border-bottom: var(--xcolor-gray) 1px solid;

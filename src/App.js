@@ -1,19 +1,26 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import ContentBox from "./ContentBox";
-import Heading from "./Heading";
-import Header from "./Header";
-import Footer from "./Footer";
+import React from "react";
+import ContentBox from "./components/ContentBox";
+import FlexBox from "./components/FlexBox";
+import Heading from "./components/Heading";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import logo from "./images/logoIcon.png";
 
 import "./App.css";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
         <Header />
         <ContentBox theme="white">
-          ウェブサイトやアプリの企画・ライティング・UI/UXを含めたデザイン・フロントエンドの実装を請け負います。お前のアプリを最高にしてやる。
+          <FlexBox>
+          <div style={{flex:1 , flexBasis: '320px'}}>
+            <img style={{width: '100%' }} src={logo} alt='logo' />
+          </div>
+          <article style={{flex:3 ,flexBasis: '320px'}}>ウェブサイトやアプリの企画・ライティング・UI/UXを含めたデザイン・フロントエンドの実装を請け負います。<br />お前のアプリを最高にしてやる。
+          </article>
+          </FlexBox>
         </ContentBox>
         <ContentBox theme="white">
           <Heading number="01">Xemonoの仕事</Heading>
@@ -34,21 +41,7 @@ class App extends Component {
           <Heading number="06">最近のXemono</Heading>
         </ContentBox>
         <Footer />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        </div>
     );
   }
 }

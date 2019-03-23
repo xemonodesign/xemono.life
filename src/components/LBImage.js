@@ -1,7 +1,7 @@
 import React from "react";
 import Lightbox from "lightbox-react";
 import "lightbox-react/style.css"; // This only needs to be imported once in your app
-import MainVisual from "./fullsize.jpg";
+import MainVisual from "./../images/fullsize.jpg";
 
 export default class LBImage extends React.Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./../App.css";
 
 const Right = props => <div className="right">{props.children}</div>;
 

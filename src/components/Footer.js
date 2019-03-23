@@ -1,8 +1,8 @@
 import React from "react";
-import "./App.css";
-import twitter from "./twitterlogo.png";
-import instagram from "./instagramlogo.png";
-import facebook from "./facebooklogo.png";
+import "./../App.css";
+import twitter from "./../images/twitterlogo.png";
+import instagram from "./../images/instagramlogo.png";
+import facebook from "./../images/facebooklogo.png";
 
 const Right = props => <div className="right">{props.children}</div>;
 
