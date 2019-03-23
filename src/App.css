@@ -1,3 +1,7 @@
+* :focus {
+  outline: none;
+}
+
 :root {
   /* 色の設定 基本的にこの色しか使わない */
   --xcolor-black: #23263A;
@@ -45,11 +49,11 @@ body{
 a {
   color: var(--xcolor-white);
   display: inline-block;
-  padding: 5px;
+  padding: .5rem;
   text-decoration-color: var(--xcolor-blue);
 }
 
-a:hover, a:active{
+a:hover, a:active, a:focus{
   background-color:var(--xcolor-yellow);
   color: var(--xcolor-black);
   transition: 0.2s;
@@ -170,10 +174,23 @@ a:hover, a:active{
   margin-left: 0;
 }
 
+.bottom-left{
+  align-self: flex-end;
+  justify-self: end;
+  margin-top: auto;
+
+}
+
+
 .flex-bar{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
 }
 
 nav{
@@ -182,8 +199,25 @@ nav{
   margin-bottom: 20px;
 }
 
+button {
+  background: var(--xcolor-black);
+  color: var(--xcolor-white);
+  min-width: 20vw;
+  padding: .5rem;
+}
+button:hover, button:active, button:focus {
+  background: var(--xcolor-yellow);
+  color: var(--xcolor-blue);
+}
+
+/* フォントサイズ周り */ 
+
 .text-large{
   font-size: var(--font-large);
+}
+
+.text-small{
+  font-size: var(--font-small)
 }
 
 .bold{
