@@ -54,15 +54,13 @@ body{
 }
 
 a {
-  color: var(--xcolor-white);
   display: inline-block;
   padding: .5rem;
-  text-decoration-color: var(--xcolor-blue);
 }
 
 a:hover, a:active, a:focus{
   background-color:var(--xcolor-yellow);
-  color: var(--xcolor-black);
+  color: var(--xcolor-black) !important; 
   transition: 0.2s;
   text-decoration: none;
 }
@@ -73,7 +71,7 @@ h2 {
   padding: 10px 0;
 }
 
-.news {
+.news li {
   list-style-type: none;
   border-top: var(--xcolor-gray) 1px solid;
   border-bottom: var(--xcolor-gray) 1px solid;
@@ -85,6 +83,23 @@ h2 {
   content: '>';
   color: var(--xcolor-gray);
   margin: 20px;
+}
+
+.news-box {
+  background-color: var(--xcolor-white);
+  border-radius: 8px;
+  width: calc(50% - var(--basic-margin) /2);
+  min-height: 30vh;
+  padding: 8px;
+}
+
+.news-box a {
+  width: 100%;
+}
+
+.news-box img {
+  width: 100%;
+  min-height: 20vh;
 }
 
 .gray-box{
@@ -102,14 +117,28 @@ h2 {
   background-color: var(--xcolor-black);
 }
 
+.theme-black a {
+  color: var(--xcolor-white);
+  text-decoration-color: var(--xcolor-blue);
+}
+
 .theme-white {
   color: var(--xcolor-black);
   background-color: var(--xcolor-white);
+}
+.theme-white a {
+  color: var(--xcolor-blue);
+  text-decoration-color: var(--xcolor-gray);
 }
 
 .theme-gray {
   color: var(--xcolor-black);
   background-color: var(--xcolor-gray);
+}
+
+.theme-gray a {
+  color: var(--xcolor-blue);
+  text-decoration-color: var(--xcolor-white);
 }
 
 
@@ -189,6 +218,30 @@ h2 {
   overflow: wrap;
 }
 
+/*-box */
+.round-box {
+  margin: 20px 0;
+  text-align: center;
+
+}
+.round-box img {
+  width: 256px;
+  height: 256px;
+  border: var(--xcolor-gray) 1px solid;
+  border-radius: 128px;
+}
+.round-box h2 {
+  color: var(--xcolor-black);
+  font-size: var(--font-large);
+  font-weight: bold;
+}
+.round-box p {
+  color: var(--xcolor-blue);
+  font-size: var(--font-medium);
+  overflow: wrap;
+}
+
+
 /* layout */
 .right{
   display: inline-block;
@@ -226,9 +279,7 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
 }
-
 
 nav {
   border-bottom: var(--xcolor-gray) 1px solid;
