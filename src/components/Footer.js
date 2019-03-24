@@ -21,7 +21,7 @@ const InstagramButton = () => (
 );
 
 const Footer = props => (
-  <footer className={`theme-black flex-bar layout-minibox`}>
+  <footer className={`theme-black flex-bar layout-box`}>
     <Left>Xemono &copy; {new Date().getFullYear()}</Left>
     <Right>
       <TweetButton />

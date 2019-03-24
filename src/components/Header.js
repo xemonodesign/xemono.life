@@ -8,7 +8,7 @@ const Right = props => <div className="right">{props.children}</div>;
 const BottomLeft = props => <div className="bottom-left">{props.children}</div>;
 
 const Header = props => (
-  <header className={`theme-black layout-box flex-column`}>
+  <header className={`theme-black layout-full flex-column`}>
     <Navi />
     <p className="text-large bold">
       使いやすくてかっこいい道具を作る

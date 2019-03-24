@@ -2,6 +2,11 @@
   outline: none;
 }
 
+body{
+  background: var(--xcolor-black);
+  text-align: var(--basic-align);
+}
+
 :root {
   /* 色の設定 基本的にこの色しか使わない */
   --xcolor-black: #23263A;
@@ -11,28 +16,36 @@
   --xcolor-yellow: #CCFF00;
 
   /* 文字サイズ */
+  --font-xlarge: 80px;
   --font-large: 32px;
   --font-medium: 24px;
   --font-small: 16px;
-  
-}
-    :root {
-      --basic-margin: 100px;
-      --heading-number-display: inline-block;
+
+  /* その他設定 */
+  --basic-margin: 100px;
+  --heading-number-display: inline-block;
+  --basic-align: left;
+  --basic-flex-direction: row; 
     }
   @media (width < 768px) {
     :root {
       --basic-margin: 50px;
       --heading-number-display: none;
-    }
-    .grid {
-      column-count: 1 !important;
+      --basic-align: left;
+      --basic-flex-direction: row; 
     }
   }
   @media (width < 480px) {
     :root {
+        /* 文字サイズ */
+      --font-xlarge: 40px;
+      --font-large: 24px;
+      --font-medium: 16px;
+      --font-small: 12px;
       --basic-margin: 20px;
       --heading-number-display: none;
+      --basic-align: center;
+      --basic-flex-direction: column; 
     }
   }
 
@@ -100,13 +113,13 @@ h2 {
 }
 
 
-.layout-box{
+.layout-full {
   min-height: 100vh;
   width: 100vw;
   padding: var(--basic-margin);
 }
 
-.layout-minibox{
+.layout-box{
   width: 100vw;
   padding: calc(var(--basic-margin)/2) var(--basic-margin) ;
 }
@@ -125,6 +138,7 @@ h2 {
   gap: calc(var(--basic-margin) / 2 );
 }
 
+/* 見出し用 */
 
 .main-heading {
   position: relative;
@@ -155,7 +169,27 @@ h2 {
   vertical-align: top;
 }
 
+/* photo-box */
+.photo-box {
+  margin: 20px 0;
+  text-align: var(--basic-align);
+}
+.photo-box img {
+  width: 200px;
+  height: 200px;
+  border: var(--xcolor-yellow) 1px solid;
+}
+.photo-box h2 {
+  color: var(--xcolor-yellow);
+  font-size: var(--font-xlarge);
+}
+.photo-box p {
+  color: var(--xcolor-gray);
+  font-size: var(--font-medium);
+  overflow: wrap;
+}
 
+/* layout */
 .right{
   display: inline-block;
   text-align: right;
@@ -172,7 +206,6 @@ h2 {
   align-self: flex-end;
   justify-self: end;
   margin-top: auto;
-
 }
 
 
@@ -189,7 +222,7 @@ h2 {
 
 .flex-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--basic-flex-direction);
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -214,7 +247,7 @@ button:hover, button:active, button:focus {
   color: var(--xcolor-blue);
 }
 
-/* フォントサイズ周り */ 
+/* 文字周り */ 
 
 .text-large{
   font-size: var(--font-large);
@@ -224,7 +257,30 @@ button:hover, button:active, button:focus {
   font-size: var(--font-small)
 }
 
-.bold{
+.bold {
   font-weight: bold;
   letter-spacing: .1rem;
+}
+
+.text-black {
+  color: var(--xcolor-black);
+}
+
+.text-gray {
+  color: var(--xcolor-gray);
+}
+
+dl {
+  margin: 40px 0;
+  line-height: 2.2rem;
+
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  color: var(--xcolor-gray);
+  margin-bottom: 40px;
+
 }

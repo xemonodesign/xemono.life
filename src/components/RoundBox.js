@@ -2,9 +2,14 @@ import React from "react";
 import "./../App.css";
 
 const RoundBox = props => (
-  <div className={`vertical-center grid`}
-  style={{columnCount: props.columnNum}}>
-      {props.children}
+  <div className='flex-column round-box'>
+    <div className='round-img'>
+      <img src={props.img} />
+    </div>
+    <div>
+      <h2>{props.title}</h2>
+      <p>{props.body}</p>
+    </div>
   </div>
 );
 

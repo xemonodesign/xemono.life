@@ -3,7 +3,7 @@ import "./../App.css";
 
 const Right = props => <div className="right">{props.children}</div>;
 
-const Left = props => <div className="Left">{props.children}</div>;
+const Left = props => <div className="left bold">{props.children}</div>;
 
 const Navi = props => (
   <nav className="flex-bar">

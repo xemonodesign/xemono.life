@@ -5,7 +5,6 @@ import PhotoBox from "./components/PhotoBox";
 import RoundBox from "./components/RoundBox";
 import NewsBox from "./components/NewsBox";
 
-
 import Heading from "./components/Heading";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -20,11 +19,19 @@ class App extends React.Component {
         <Header />
         <ContentBox theme="white">
           <FlexBox>
-            <div style={{ flex: 1, flexBasis: "320px" }}>
+            <div style={{ flex: 1, flexBasis: "280px" }}>
               <img style={{ width: "100%" }} src={logo} alt="logo" />
             </div>
             <article style={{ flex: 3, flexBasis: "320px" }}>
-              ウェブサイトやアプリの企画・ライティング・UI/UXを含めたデザイン・フロントエンドの実装を請け負います。
+              <span className="bold">請負：</span>
+              <br />
+              ウェブサイトやアプリの企画、
+              <br />
+              ライティング、
+              <br />
+              UI/UXを含めたデザイン、
+              <br />
+              フロントエンドの実装。
               <br />
               お前のアプリを最高にしてやる。
             </article>
@@ -39,73 +46,93 @@ class App extends React.Component {
         </ContentBox>
         <ContentBox theme="white">
           <Heading number="01">Xemonoの仕事</Heading>
-          <p>見た目がかっこいいけど伝わらなくてテプラを貼りたくなっちゃうデザインと、<br />
-        見た目は普通だけど嫌でも伝わるデザイン、どっちが欲しいですか。<br />
-
-        かっこよくて伝わるデザインが最強ですよね。くせものたちが目指すのはそっちです。</p>
-        <div className="gray-box">Coming soon</div>
+          <p>
+            見た目がかっこいいけど伝わらなくてテプラを貼りたくなっちゃうデザインと、
+            <br />
+            見た目は普通だけど嫌でも伝わるデザイン、どっちが欲しいですか。
+            <br />
+            かっこよくて伝わるデザインが最強ですよね。くせものたちが目指すのはそっちです。
+          </p>
+          <div className="gray-box">Coming soon</div>
         </ContentBox>
         <ContentBox theme="black">
           <Heading number="02">Xemonoができること</Heading>
-          <PhotoBox 
-            img='blank'
-            title='Design'
-            body='くせものたちが話を聞きに来るぞ'
-           />
-          <PhotoBox 
-            img='blank'
-            title='Design'
-            body='くせものたちが話を聞きに来るぞ'
-           />
-          <PhotoBox 
-            img='blank'
-            title='Design'
-            body='くせものたちが話を聞きに来るぞ'
-           />
+          <PhotoBox
+            img="blank"
+            title="Design"
+            body="くせものたちが話を聞きに来るぞ"
+          />
+          <PhotoBox
+            img="blank"
+            title="Coding"
+            body="絵に描いた餅を本物の餅に"
+          />
+          <PhotoBox
+            img="blank"
+            title="Writing"
+            body="伝えたいことを、伝わる文章に"
+          />
         </ContentBox>
         <ContentBox theme="white">
           <Heading number="03">Xemonoに頼めること</Heading>
-          <RoundBox 
-            img='blank'
-            title='コンサルティング'
-            body='デザインのかかりつけ医になります'
-           />
-          <RoundBox 
-            img='blank'
-            title='コンサルティング'
-            body='デザインのかかりつけ医になります'
-           />
-          <RoundBox 
-            img='blank'
-            title='コンサルティング'
-            body='デザインのかかりつけ医になります'
-           />
+          <FlexBox>
+          <RoundBox
+            img="blank"
+            title="コンサルティング"
+            body="デザインのかかりつけ医になります"
+          />
+          <RoundBox
+            img="blank"
+            title="新規案件"
+            body="UXデザイナーと企画を立てませんか"
+          />
+          <RoundBox
+            img="blank"
+            title="既存案件"
+            body="ユーザーの気持ちを考える"
+          />
+          </FlexBox>
         </ContentBox>
         <ContentBox theme="gray">
           <Heading number="04">Xemonoと仕事する</Heading>
-          <div></div>
-          <div>
-            <h2>代表　鳥居萌</h2>
-            <p>1991年生。デザイナー、歌人。話し相手が欲しくてbotを自作したことがある。東京大学理科一類に入学、文学部宗教学宗教史学卒業。大学では「人間が狂気に陥ることを回避しながら安全にものを考えるため、必要な前提とは何か？」ということを考えていた。新卒では株式会社花まるラボで幼児向けパズルアプリ「Think! Think!」（Google Play「ベスト オブ 2017」アプリ ファミリー部門入賞）のデザイナーとして、複雑そうに見えるパズルを子どもたちにわかりやすく、また親しみやすい感じにする仕事をしていた。ウェブメディア「電ファミニコゲーマー」で編集アシスタントとして記事を作りながら、インターネットでの文章の見せ方を身に着けたりもした。その後はフリーでUXデザイナーをして「シンプルだけどテプラを貼られないデザイン」を研究しつつ、2019年に株式会社Xemonoを立ち上げる。性格はとてもいい。          
-            <br />http://megumitorii.tk</p>
+          <div className='flex-row'>
+          <div style={{ flex: 1}} className="gray-box">アー写が入る</div>
+          <div style={{ flex: 1}}>
+            <h2 className='text-large text-black'>代表　鳥居萌</h2>
+            <p>
+              1991年生。デザイナー、歌人。話し相手が欲しくてbotを自作したことがある。東京大学理科一類に入学、文学部宗教学宗教史学卒業。大学では「人間が狂気に陥ることを回避しながら安全にものを考えるため、必要な前提とは何か？」ということを考えていた。新卒では株式会社花まるラボで幼児向けパズルアプリ「Think!
+              Think!」（Google Play「ベスト オブ 2017」アプリ
+              ファミリー部門入賞）のデザイナーとして、複雑そうに見えるパズルを子どもたちにわかりやすく、また親しみやすい感じにする仕事をしていた。ウェブメディア「電ファミニコゲーマー」で編集アシスタントとして記事を作りながら、インターネットでの文章の見せ方を身に着けたりもした。その後はフリーでUXデザイナーをして「シンプルだけどテプラを貼られないデザイン」を研究しつつ、2019年に株式会社Xemonoを立ち上げる。性格はとてもいい。
+              <br />
+              http://megumitorii.tk
+            </p>
+            </div>
           </div>
         </ContentBox>
         <ContentBox theme="black">
           <Heading number="05">会社概要</Heading>
-          <div>
-            株式会社 Xemono 
-            かぶしきがいしゃ くせもの
-
-            設立：2019年4月1日
-            代表取締役：鳥居 萌
-　　　　　　  とりいめぐみ
-          </div>
-          <div>
-            Contact：
-            東京都八王子市別所1-41-1-6-2201
-            contact@xemono.life
+          <FlexBox>
+          <dl style={{ flex: 1}}>
+            <dt>株式会社 Xemono</dt>
+            <dd>かぶしきがいしゃ くせもの</dd>
+            <dt>設立：</dt>
+            <dd>2019年4月1日</dd>
+            
+            <dt>代表取締役：</dt>
+            <dd>
+            鳥居 萌<br />
+            とりいめぐみ
+            </dd>
+          </dl>
+          <dl style={{ flex: 1, alignItems: 'flex-start'}}>
+            <dt>Contact：</dt>
+            <dd>
+            東京都八王子市別所1-41-1-6-2201<br />
+            contact@xemono.life<br />
             080-6586-2216
-          </div>
+            </dd>
+          </dl>
+        </FlexBox>
         </ContentBox>
         <ContentBox theme="gray">
           <Heading number="06">最近のXemono</Heading>
