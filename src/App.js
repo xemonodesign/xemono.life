@@ -1,12 +1,10 @@
 import React from "react";
-import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navi from "./components/Navi";
 import ContentBox from "./components/ContentBox";
 import FlexBox from "./components/FlexBox";
 import PhotoBox from "./components/PhotoBox";
 import RoundBox from "./components/RoundBox";
-import NewsBox from "./components/NewsBox";
 
 import Heading from "./components/Heading";
 import Header from "./components/Header";

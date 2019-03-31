@@ -175,6 +175,16 @@ ul.news{
   background-repeat: no-repeat;
 }
 
+@media (width > 1600px) {
+  .theme-cover {
+    background: linear-gradient(114.63deg, #23263A 0%, transparent 41.18%), url('./images/cover.png')  ,  var(--xcolor-black) ;
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 110vh;
+  }
+}
+
 @media (width < 800px) {
   .theme-cover {
     background: linear-gradient(114.63deg, #23263A 0%, transparent 41.18%), url('./images/cover.png')  ,  var(--xcolor-white) ;

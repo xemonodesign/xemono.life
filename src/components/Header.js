@@ -2,9 +2,6 @@ import React from "react";
 import "./../App.css";
 import Navi from "./Navi";
 import LBImage from "./LBImage";
-import CoverImage from './../images/cover.png'
-
-const Right = props => <div className="right">{props.children}</div>;
 
 const BottomLeft = props => <div className="bottom-left">{props.children}</div>;
 

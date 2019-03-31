@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ContentBox from "./components/ContentBox";
 import Navi from "./components/Navi";
 import BackNavi from "./components/BackNavi";
@@ -134,6 +134,7 @@ const PROJECTS = [
           className="button"
           href="https://think2app.hanamarulab.com/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Think! Think! 公式サイトはこちら
         </a>
