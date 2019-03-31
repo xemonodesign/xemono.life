@@ -105,7 +105,7 @@ const Home = () => (
           img={Icon6}
           title="既存案件の改善"
           url="kaizen"
-          body="ユーザーの気持ちを考える"
+          body="改善が速い"
         />
       </FlexBox>
     </ContentBox>

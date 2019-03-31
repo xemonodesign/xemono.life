@@ -130,6 +130,7 @@ const Skills = props => {
         <h1>{skill.title}</h1>
       </ContentBox>
       <ContentBox theme="white">
+        <h2>{skill.sub}</h2>
         <p>{skill.content}</p>
       </ContentBox>
       <BackNavi />
