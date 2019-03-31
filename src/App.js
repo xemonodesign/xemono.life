@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import Navi from "./components/Navi";
 import ContentBox from "./components/ContentBox";
@@ -30,7 +30,7 @@ import Icon6 from "./images/xemono_icon_6.png";
 import "./App.css";
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
     <ScrollToTop>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -41,7 +41,7 @@ const App = () => (
       </Switch>
       <Footer />
     </ScrollToTop>
-  </BrowserRouter>
+  </Router>
 );
 
 const Home = () => (
