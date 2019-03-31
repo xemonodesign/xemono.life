@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "lightbox-react": "^0.3.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -14,7 +15,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "fmt": "prettier 'src/*.js' --write"
+    "fmt": "prettier 'src/*.js' --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +30,6 @@
   ],
   "devDependencies": {
     "prettier": "1.16.4"
-  }
+  },
+  "homepage": "https://xemono.life"
 }
