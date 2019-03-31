@@ -104,11 +104,9 @@ const PROJECTS = [
         <h2>レーザービーム</h2>
         <div className="flex-row">
           <img
-            style={{ height: "400px" }}
             src={require("./images/thinkthink_laser_draft.gif")}
           />
           <img
-            style={{ height: "400px" }}
             src={require("./images/thinkthink_laser.gif")}
           />
         </div>
