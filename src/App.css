@@ -5,6 +5,7 @@
 body{
   background: var(--xcolor-black);
   text-align: left;
+  overflow-x: hidden;
 }
 
 :root {
@@ -141,7 +142,6 @@ ul.news{
 
 .news-box img {
   max-width: 100%;
-  min-height: 15vh;
   margin: 10px 0;
   border-radius: 20px;
 }

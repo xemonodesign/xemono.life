@@ -168,7 +168,7 @@ export const ProjectsBoxes = () => (
         <div className="projects-box flex-row" key={projects.id}>
           <img
             src={projects.image}
-            style={{ flex: "0 0 20vw", maxHeight: "400px" }}
+            
           />
           <div style={{ flex: "1 0 40vw" }}>
             <h2 className="title">{projects.title}</h2>
