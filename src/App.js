@@ -14,6 +14,14 @@ import Footer from "./components/Footer";
 import logo from "./images/logoIcon.png";
 
 import News, { NewsList, NewsBoxes } from "./News";
+import Skills from "./Skills";
+
+import Icon1 from "./images/xemono_icon_1.png";
+import Icon2 from "./images/xemono_icon_2.png";
+import Icon3 from "./images/xemono_icon_3.png";
+import Icon4 from "./images/xemono_icon_4.png";
+import Icon5 from "./images/xemono_icon_5.png";
+import Icon6 from "./images/xemono_icon_6.png";
 
 import "./App.css";
 
@@ -22,6 +30,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/news/:id" component={News} />
+      <Route path="/skills/:id" component={Skills} />
     </Switch>
     <Footer />
   </BrowserRouter>
@@ -53,7 +62,7 @@ const Home = () => (
     </ContentBox>
     <ContentBox theme="white">
       <Heading number="01">Xemonoの仕事</Heading>
-      <p>
+      <p style={{ textAlign: "left" }}>
         見た目がかっこいいけど伝わらなくてテプラを貼りたくなっちゃうデザインと、
         <br />
         見た目は普通だけど嫌でも伝わるデザイン、どっちが欲しいですか。
@@ -65,13 +74,13 @@ const Home = () => (
     <ContentBox theme="black">
       <Heading number="02">Xemonoができること</Heading>
       <PhotoBox
-        img="blank"
+        img={Icon1}
         title="Design"
         body="くせものたちが話を聞きに来るぞ"
       />
-      <PhotoBox img="blank" title="Coding" body="絵に描いた餅を本物の餅に" />
+      <PhotoBox img={Icon2} title="Coding" body="絵に描いた餅を本物の餅に" />
       <PhotoBox
-        img="blank"
+        img={Icon3}
         title="Writing"
         body="伝えたいことを、伝わる文章に"
       />
@@ -80,17 +89,17 @@ const Home = () => (
       <Heading number="03">Xemonoに頼めること</Heading>
       <FlexBox>
         <RoundBox
-          img="blank"
+          img={Icon4}
           title="コンサルティング"
-          body="デザインのかかりつけ医になります"
+          body="デザインのかかりつけ医"
         />
         <RoundBox
-          img="blank"
+          img={Icon5}
           title="新規案件"
-          body="UXデザイナーと企画を立てませんか"
+          body="UXデザイナーと企画を立てる"
         />
         <RoundBox
-          img="blank"
+          img={Icon6}
           title="既存案件"
           body="ユーザーの気持ちを考える"
         />
@@ -98,13 +107,13 @@ const Home = () => (
     </ContentBox>
     <ContentBox theme="gray">
       <Heading number="04">Xemonoと仕事する</Heading>
-      <div className="flex-row">
-        <div style={{ flex: 1 }} className="gray-box">
+      <FlexBox>
+        <div style={{ flex: "1 0 320px" }} className="gray-box">
           アー写が入る
         </div>
         <div style={{ flex: 1 }}>
           <h2 className="text-large text-black">代表　とりいめぐみ</h2>
-          <p>
+          <p style={{ textAlign: "left" }}>
             1991年生。デザイナー、歌人。話し相手が欲しくてbotを自作したことがある。東京大学理科一類に入学、文学部宗教学宗教史学卒業。大学では「人間が狂気に陥ることを回避しながら安全にものを考えるため、必要な前提とは何か？」ということを考えていた。新卒では株式会社花まるラボで幼児向けパズルアプリ「Think!
             Think!」（Google Play「ベスト オブ 2017」アプリ
             ファミリー部門入賞）のデザイナーとして、複雑そうに見えるパズルを子どもたちにわかりやすく、また親しみやすい感じにする仕事をしていた。ウェブメディア「電ファミニコゲーマー」で編集アシスタントとして記事を作りながら、インターネットでの文章の見せ方を身に着けたりもした。その後はフリーでUXデザイナーをして「シンプルだけどテプラを貼られないデザイン」を研究しつつ、2019年に株式会社Xemonoを立ち上げる。性格はとてもいい。
@@ -112,12 +121,12 @@ const Home = () => (
             http://megumitorii.tk
           </p>
         </div>
-      </div>
+      </FlexBox>
     </ContentBox>
     <ContentBox theme="black">
       <Heading number="05">会社概要</Heading>
       <FlexBox>
-        <dl style={{ flex: 1 }}>
+        <dl style={{ flex: 1, textAlign: "left" }}>
           <dt>株式会社 Xemono</dt>
           <dd>かぶしきがいしゃ くせもの</dd>
           <dt>設立：</dt>
@@ -129,7 +138,7 @@ const Home = () => (
             とりいめぐみ
           </dd>
         </dl>
-        <dl style={{ flex: 1, alignItems: "flex-start" }}>
+        <dl style={{ flex: 1, alignSelf: "flex-start", textAlign: "left" }}>
           <dt>Contact：</dt>
           <dd>
             東京都八王子市別所1-41-1-6-2201
