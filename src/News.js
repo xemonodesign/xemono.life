@@ -13,14 +13,7 @@ const NEWS = [
     title: "会社が生えました",
     content:
       "Xemono社は創立0周年を迎えました。これからもよろしくお願いします。",
-    image: "blank"
-  },
-  {
-    id: "20190402",
-    date: "2019.04.02",
-    title: "うっそぴょん",
-    content: "わあい",
-    image: "blank"
+    image: require("./images/news20190401.png")
   }
 ];
 

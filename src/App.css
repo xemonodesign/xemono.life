@@ -4,7 +4,7 @@
 
 body{
   background: var(--xcolor-black);
-  text-align: var(--basic-align);
+  text-align: left;
 }
 
 :root {
@@ -72,9 +72,38 @@ h1{
 }
 
 h2 {
-  font-size: var(--font-medium);
+  font-size: var(--font-large);
   color: var(--xcolor-blue);
-  padding: 10px 0;
+  padding: 20px 0;
+}
+
+img {
+  margin: 20px;
+}
+
+p {
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+blockquote {
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+  border: 1px solid var(--xcolor-yellow);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+
+}
+
+ul{
+  margin: 4rem;
+}
+
+
+
+ul.news{ 
+  margin : 0;
 }
 
 .news li {
@@ -111,8 +140,10 @@ h2 {
 }
 
 .news-box img {
-  width: 100%;
-  min-height: 20vh;
+  max-width: 100%;
+  min-height: 15vh;
+  margin: 10px 0;
+  border-radius: 20px;
 }
 
 .gray-box{
@@ -149,7 +180,7 @@ h2 {
     background-position: center top;
     background-size: 200%;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 140vh;
   }
 }
 
@@ -220,8 +251,8 @@ h2 {
   background: var(--xcolor-yellow);
 }
 .main-heading .number {
-    font-size: calc(var(--font-xlarge) *1); 
-    line-height: calc(var(--font-xlarge) *1); 
+    font-size: var(--font-xlarge); 
+    line-height: var(--font-xlarge); 
     display: var(--heading-number-display);
     margin-right: 32px;
     width: calc(var(--font-xlarge) *1.5);
@@ -229,8 +260,7 @@ h2 {
 }
 .main-heading .bun {
   font-size: var(--font-large);
-  line-height: calc(var(--font-xlarge) *1); 
-  vertical-align: top;
+  vertical-align: text-top;
 }
 
 /* photo-box */
@@ -306,6 +336,10 @@ h2 {
   margin-left: 0;
 }
 
+.center {
+  margin: auto;
+}
+
 .bottom-left {
   align-self: flex-end;
   justify-self: end;
@@ -338,13 +372,16 @@ nav {
   margin-bottom: 20px;
 }
 
-button {
+button, a.button {
   background: var(--xcolor-black);
   color: var(--xcolor-white);
+  text-align:center;
   min-width: 20vw;
   padding: .5rem;
+  text-decoration: none;
+  display: block;
 }
-button:hover, button:active, button:focus {
+button:hover, button:active, button:focus ,a.button:hover, a.button:active, a.button:focus {
   background: var(--xcolor-yellow);
   color: var(--xcolor-blue);
 }

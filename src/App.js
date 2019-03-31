@@ -15,6 +15,10 @@ import logo from "./images/logoIcon.png";
 
 import News, { NewsList, NewsBoxes } from "./News";
 import Skills from "./Skills";
+import WorkWith from "./WorkWith";
+import Projects, { ProjectsList, ProjectsBoxes } from "./Projects";
+
+import ScrollToTop from "./components/ScrollToTop";
 
 import Icon1 from "./images/xemono_icon_1.png";
 import Icon2 from "./images/xemono_icon_2.png";
@@ -27,12 +31,16 @@ import "./App.css";
 
 const App = () => (
   <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/news/:id" component={News} />
-      <Route path="/skills/:id" component={Skills} />
-    </Switch>
-    <Footer />
+    <ScrollToTop>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/news/:id" component={News} />
+        <Route path="/skills/:id" component={Skills} />
+        <Route path="/workwith/:id" component={WorkWith} />
+        <Route path="/projects/:id" component={Projects} />
+      </Switch>
+      <Footer />
+    </ScrollToTop>
   </BrowserRouter>
 );
 
@@ -62,14 +70,7 @@ const Home = () => (
     </ContentBox>
     <ContentBox theme="white">
       <Heading number="01">Xemonoの仕事</Heading>
-      <p style={{ textAlign: "left" }}>
-        見た目がかっこいいけど伝わらなくてテプラを貼りたくなっちゃうデザインと、
-        <br />
-        見た目は普通だけど嫌でも伝わるデザイン、どっちが欲しいですか。
-        <br />
-        かっこよくて伝わるデザインが最強ですよね。くせものたちが目指すのはそっちです。
-      </p>
-      <div className="gray-box">Coming soon</div>
+      <ProjectsBoxes />
     </ContentBox>
     <ContentBox theme="black">
       <Heading number="02">Xemonoができること</Heading>
@@ -91,16 +92,19 @@ const Home = () => (
         <RoundBox
           img={Icon4}
           title="コンサルティング"
+          url="consulting"
           body="デザインのかかりつけ医"
         />
         <RoundBox
           img={Icon5}
-          title="新規案件"
+          title="新規案件のデザイン"
+          url="new"
           body="UXデザイナーと企画を立てる"
         />
         <RoundBox
           img={Icon6}
-          title="既存案件"
+          title="既存案件の改善"
+          url="kaizen"
           body="ユーザーの気持ちを考える"
         />
       </FlexBox>
@@ -108,18 +112,55 @@ const Home = () => (
     <ContentBox theme="gray">
       <Heading number="04">Xemonoと仕事する</Heading>
       <FlexBox>
-        <div style={{ flex: "1 0 320px" }} className="gray-box">
-          アー写が入る
-        </div>
         <div style={{ flex: 1 }}>
           <h2 className="text-large text-black">代表　とりいめぐみ</h2>
           <p style={{ textAlign: "left" }}>
-            1991年生。デザイナー、歌人。話し相手が欲しくてbotを自作したことがある。東京大学理科一類に入学、文学部宗教学宗教史学卒業。大学では「人間が狂気に陥ることを回避しながら安全にものを考えるため、必要な前提とは何か？」ということを考えていた。新卒では株式会社花まるラボで幼児向けパズルアプリ「Think!
-            Think!」（Google Play「ベスト オブ 2017」アプリ
-            ファミリー部門入賞）のデザイナーとして、複雑そうに見えるパズルを子どもたちにわかりやすく、また親しみやすい感じにする仕事をしていた。ウェブメディア「電ファミニコゲーマー」で編集アシスタントとして記事を作りながら、インターネットでの文章の見せ方を身に着けたりもした。その後はフリーでUXデザイナーをして「シンプルだけどテプラを貼られないデザイン」を研究しつつ、2019年に株式会社Xemonoを立ち上げる。性格はとてもいい。
+            1991年生。デザイナー、歌人。
             <br />
-            http://megumitorii.tk
+            話し相手が欲しくてbotを自作したことがある。
+            <br />
+            東京大学理科一類入学、文学部宗教学宗教史学卒業。大学では「人間が狂気に陥ることを回避しながら安全にものを考えるため、必要な前提とは何か？」ということを考えていた。
+            <br />
+            新卒で入社した株式会社花まるラボでは幼児向けパズルアプリ「Think!
+            Think!」（Google Play「ベスト オブ 2017」アプリ
+            ファミリー部門入賞）のデザイナーとして、複雑そうに見えるパズルを子どもたちにわかりやすく、また親しみやすい感じにする仕事をしていた。
+            <br />
+            ウェブメディア「電ファミニコゲーマー」で編集アシスタントとして記事を作りながら、インターネットでの文章の見せ方を身に着けたりもした。
+            <br />
+            その後はフリーでUXデザイナーをして「シンプルだけどテプラを貼られないデザイン」を研究しつつ、2019年に株式会社Xemonoを立ち上げる。
+            <br />
+            性格はとてもいい。
+            <br />
           </p>
+
+          <h3>取引先からの声</h3>
+          <blockquote class="twitter-tweet" data-lang="ja">
+            <p lang="ja" dir="ltr">
+              React が書ける UI/UX デザイナーとして雇った{" "}
+              <a href="https://twitter.com/kinakobooster?ref_src=twsrc%5Etfw">
+                @kinakobooster
+              </a>{" "}
+              は実は何よりもすごいのがヒアリング能力だという事に気付いた。彼女は何が欲しいのかをデザイン視点からきっちり動くデザイン付きのモックが作れる。
+            </p>
+            &mdash; V (@voluntas){" "}
+            <a href="https://twitter.com/voluntas/status/1110905626186518530?ref_src=twsrc%5Etfw">
+              2019年3月27日
+            </a>
+          </blockquote>
+          <blockquote class="twitter-tweet" data-lang="ja">
+            <p lang="ja" dir="ltr">
+              ヒアリング能力が異常に高いし、文章としてまとめる能力も高い。これはズルすぎる。文章にまとめさえすれば他の人にも依頼しやすい。チーム戦に欲しい人材。
+            </p>
+            &mdash; V (@voluntas){" "}
+            <a href="https://twitter.com/voluntas/status/1110906626469298176?ref_src=twsrc%5Etfw">
+              2019年3月27日
+            </a>
+          </blockquote>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          />
         </div>
       </FlexBox>
     </ContentBox>
