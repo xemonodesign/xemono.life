@@ -1,22 +1,22 @@
 self.__precacheManifest = [
   {
-    "revision": "37be941c0287a31f8c1d",
-    "url": "/static/css/main.06f08c11.chunk.css"
+    "revision": "2cb16bc871bdbaa658a6",
+    "url": "/static/css/main.4b39d49a.chunk.css"
   },
   {
-    "revision": "37be941c0287a31f8c1d",
-    "url": "/static/js/main.0c33d038.chunk.js"
+    "revision": "2cb16bc871bdbaa658a6",
+    "url": "/static/js/main.4653be95.chunk.js"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.c5541365.js"
   },
   {
-    "revision": "22fcb24526302ba0916a",
-    "url": "/static/css/2.c69406f2.chunk.css"
+    "revision": "32c67b08f7e1b400dfa6",
+    "url": "/static/css/2.63e9962a.chunk.css"
   },
   {
-    "revision": "22fcb24526302ba0916a",
+    "revision": "32c67b08f7e1b400dfa6",
     "url": "/static/js/2.0e09c343.chunk.js"
   },
   {
@@ -52,6 +52,10 @@ self.__precacheManifest = [
     "url": "/static/media/xemono_icon_6.238a00d8.png"
   },
   {
+    "revision": "41396dcaea3645712c00722f550feadc",
+    "url": "/static/media/news20190406.41396dca.png"
+  },
+  {
     "revision": "5fcd735b1046fd0b73715fa8a1831119",
     "url": "/static/media/news20190401.5fcd735b.png"
   },
@@ -84,7 +88,7 @@ self.__precacheManifest = [
     "url": "/static/media/thinkthink_laser.8342b978.gif"
   },
   {
-    "revision": "cd4dbad873baa48e1fbb293c1b338e1b",
+    "revision": "bc54e1efccfe51e787413bf239473a1e",
     "url": "/index.html"
   }
 ];
