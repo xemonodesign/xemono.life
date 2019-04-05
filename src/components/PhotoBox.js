@@ -7,7 +7,7 @@ const PhotoBox = props => (
   <div className='photo-box'>
   <Link to={`/skills/${props.title.toLowerCase()}`} className="flex-row">
     <div style={{flex: "0 0 220px"}}>
-      <img src={props.img} />
+      <img alt='' src={props.img} />
     </div>
     <div style={{flex: '3 0 220px'}}>
       <h2>{props.title}</h2>

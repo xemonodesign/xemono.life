@@ -7,7 +7,7 @@ const RoundBox = props => (
   <div className='flex-column round-box'>
   <Link to={`/workwith/${props.url}`} className="flex-column">
     <div className='round-img'>
-      <img src={props.img} />
+      <img alt ='' src={props.img} />
     </div>
     <div>
       <h2>{props.title}</h2>

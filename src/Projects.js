@@ -15,13 +15,15 @@ const PROJECTS = [
       <>
         <p>Think! Think! はパズルを使って「思考力」を育てる教材アプリです。</p>
         <p>
-          パズルデザイナーから上がってきた原案をもとに、子どもが直感的にルールを理解できるようデザインを考えていました。
+          代表のとりいはデザイナーとして、パズルデザイナーから上がってきた原案をもとに子どもが直感的にルールを理解できるようデザインを考えていました。
         </p>
       </>
     ),
     content: (
       <>
-        <p>協力期間：2015年4月 ~ 2017年11月</p>
+        <p>協力期間：2015年4月 ~ 2017年11月（代表鳥居による、株式会社花まるラボ所属時の仕事）</p>
+        <p>担当：Adobe Illustratorを使用したパズルやキャラクターのデザイン</p>
+
         <p>
           <a href="https://www.hanamarulab.com/">株式会社花まるラボ</a>
           にて、小学生向け教材アプリThink!
@@ -55,8 +57,12 @@ const PROJECTS = [
         </p>
         <p>原案の再現と実際のデザインの例は以下の通りです。</p>
         <h2>ラッキーバルーン</h2>
-        <img src={require("./images/thinkthink_luckyballoon_draft.gif")} />
-        <img src={require("./images/thinkthink_luckyballoon.gif")} />
+        <img
+          alt='ラッキーバルーンの原案（再現）'
+         src={require("./images/thinkthink_luckyballoon_draft.gif")} />
+        <img
+        alt='ラッキーバルーンの実装'
+         src={require("./images/thinkthink_luckyballoon.gif")} />
         <p>
           <strong>要件：</strong>
           <br />
@@ -82,8 +88,12 @@ const PROJECTS = [
         </p>
 
         <h2>ひとふででんきゅう</h2>
-        <img src={require("./images/thinkthink_hitohude_draft.gif")} />
-        <img src={require("./images/thinkthink_hitohude.gif")} />
+        <img
+         alt='ひとふででんきゅうの原案（再現）'
+         src={require("./images/thinkthink_hitohude_draft.gif")} />
+        <img 
+        alt='ひとふででんきゅうの実装'
+        src={require("./images/thinkthink_hitohude.gif")} />
         <p>
           <strong>要件：</strong>
           <br />
@@ -104,9 +114,11 @@ const PROJECTS = [
         <h2>レーザービーム</h2>
         <div className="flex-row">
           <img
+            alt='レーザービームの原案（再現）'
             src={require("./images/thinkthink_laser_draft.gif")}
           />
           <img
+            alt='レーザービームの実装'
             src={require("./images/thinkthink_laser.gif")}
           />
         </div>
@@ -167,7 +179,7 @@ export const ProjectsBoxes = () => (
         <div className="projects-box flex-row" key={projects.id}>
           <img
             src={projects.image}
-            
+            alt={projects.title}
           />
           <div style={{ flex: "1 0 40vw" }}>
             <h2 className="title">{projects.title}</h2>
@@ -215,7 +227,8 @@ const Projects = props => {
       </ContentBox>
       <ContentBox theme="white">
         <h1>{Projects.title}</h1>
-        <img src={Projects.image} />
+        <img src={Projects.image}
+        alt={Projects.titleya} />
         <p>{Projects.content}</p>
       </ContentBox>
       <BackNavi />

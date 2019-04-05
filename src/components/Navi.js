@@ -2,7 +2,7 @@ import React from "react";
 import "./../App.css";
 import { Link } from "react-router-dom";
 
-const Right = props => <div className="right">{props.children}</div>;
+ // const Right = props => <div className="right">{props.children}</div>;
 
 const Left = props => <div className="left bold">{props.children}</div>;
 

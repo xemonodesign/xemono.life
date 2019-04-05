@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ContentBox from "./components/ContentBox";
 import Navi from "./components/Navi";
 import BackNavi from "./components/BackNavi";

@@ -14,7 +14,7 @@ import logo from "./images/logoIcon.png";
 import News, { NewsList, NewsBoxes } from "./News";
 import Skills from "./Skills";
 import WorkWith from "./WorkWith";
-import Projects, { ProjectsList, ProjectsBoxes } from "./Projects";
+import Projects, { ProjectsBoxes } from "./Projects";
 
 import ScrollToTop from "./components/ScrollToTop";
 
