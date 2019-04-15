@@ -7,7 +7,15 @@ import BackNavi from "./components/BackNavi";
 import "./App.css";
 
 const NEWS = [
-    {
+  {
+    type: 'link',
+    id: "20190411",
+    date: "2019.04.11",
+    title: "代表のブログ記事「UIデザイナーがアイコン一種完成させるまでに考えること」が公開されました",
+    link: 'https://note.mu/xemono/n/nd7b696b78702',
+    image: require("./images/news20190411.png")
+  },  
+  {
     type: 'link',
     id: "20190406",
     date: "2019.04.06",
