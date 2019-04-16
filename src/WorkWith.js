@@ -9,7 +9,7 @@ const WORKWITH = [
   {
     id: "consulting",
     title: "コンサルティング",
-    sub: 'デザインのかかりつけ医',
+    sub: "デザインのかかりつけ医",
     content: (
       <p>
         <ul>
@@ -27,7 +27,7 @@ const WORKWITH = [
   {
     id: "new",
     title: "新規案件のデザイン",
-    sub:'UXデザイナーと企画を立てる',
+    sub: "UXデザイナーと企画を立てる",
     content: (
       <p>
         新規案件立ち上げで一番大切なのは、
@@ -46,7 +46,7 @@ const WORKWITH = [
   {
     id: "kaizen",
     title: "既存案件の改善",
-    sub: '改善が速い',
+    sub: "改善が速い",
     content: (
       <p>
         アプリやウェブサイトが動き出したはいいものの、なんだか伸びがあんまりよくない、というお悩みを抱えてはいませんか。

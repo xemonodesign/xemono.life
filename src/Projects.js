@@ -21,7 +21,10 @@ const PROJECTS = [
     ),
     content: (
       <>
-        <p>協力期間：2015年4月 ~ 2017年11月（代表鳥居による、株式会社花まるラボ所属時の仕事）</p>
+        <p>
+          協力期間：2015年4月 ~
+          2017年11月（代表鳥居による、株式会社花まるラボ所属時の仕事）
+        </p>
         <p>担当：Adobe Illustratorを使用したパズルやキャラクターのデザイン</p>
 
         <p>
@@ -58,13 +61,17 @@ const PROJECTS = [
         <p>原案の再現と実際のデザインの例は以下の通りです。</p>
         <h2>ラッキーバルーン</h2>
         <img
-          alt='ラッキーバルーンの原案（再現）'
-         src={require("./images/thinkthink_luckyballoon_draft.gif")} />
+          alt="ラッキーバルーンの原案（再現）"
+          src={require("./images/thinkthink_luckyballoon_draft.gif")}
+        />
         <img
-        alt='ラッキーバルーンの実装'
-         src={require("./images/thinkthink_luckyballoon.gif")} />
+          alt="ラッキーバルーンの実装"
+          src={require("./images/thinkthink_luckyballoon.gif")}
+        />
         <p>
-          ※とりいは風船や矢の絵を用意しました。矢の動きや風船が割れる小気味よいアニメーションをつけたのは花まるラボのプログラミングチームの方々です。</p><p>
+          ※とりいは風船や矢の絵を用意しました。矢の動きや風船が割れる小気味よいアニメーションをつけたのは花まるラボのプログラミングチームの方々です。
+        </p>
+        <p>
           <strong>要件：</strong>
           <br />
           真っ直ぐ飛ぶ矢と風船が配置されていて、割れずに生き残る風船を選ぶ。
@@ -86,19 +93,24 @@ const PROJECTS = [
           <br />
           子どもたちはそれを見て顔真似するほど喜んでいました。
           <br />
-          
         </p>
 
         <h2>ひとふででんきゅう</h2>
         <img
-         alt='ひとふででんきゅうの原案（再現）'
-         src={require("./images/thinkthink_hitohude_draft.gif")} />
-        <img 
-        alt='ひとふででんきゅうの実装'
-        src={require("./images/thinkthink_hitohude.gif")} />
+          alt="ひとふででんきゅうの原案（再現）"
+          src={require("./images/thinkthink_hitohude_draft.gif")}
+        />
+        <img
+          alt="ひとふででんきゅうの実装"
+          src={require("./images/thinkthink_hitohude.gif")}
+        />
         <p>
-          ※ひとふででんきゅうはThink! Think!の数あるコンテンツの中でもかなり人気のパズルです。<br />
-          花まるラボのプログラミングチームの方々が、直観的な操作UIを実装してくれました。</p><p>
+          ※ひとふででんきゅうはThink!
+          Think!の数あるコンテンツの中でもかなり人気のパズルです。
+          <br />
+          花まるラボのプログラミングチームの方々が、直観的な操作UIを実装してくれました。
+        </p>
+        <p>
           <strong>要件：</strong>
           <br />
           すべてのマスを一筆書きで踏んでいくパズル
@@ -115,22 +127,23 @@ const PROJECTS = [
           <br />
           また、斜めに通れなさを表現するため、各マスの端にさりげなく壁を置いてあります。
           <br />
-
-
         </p>
         <h2>レーザービーム</h2>
         <div className="flex-row">
           <img
-            alt='レーザービームの原案（再現）'
+            alt="レーザービームの原案（再現）"
             src={require("./images/thinkthink_laser_draft.gif")}
           />
           <img
-            alt='レーザービームの実装'
+            alt="レーザービームの実装"
             src={require("./images/thinkthink_laser.gif")}
           />
         </div>
         <p>
-        ※とりいは画面の画像素材のみを制作し、実際のアプリ上の動きは花まるラボのプログラミングチームの方が実装してくれました。<br /></p><p>
+          ※とりいは画面の画像素材のみを制作し、実際のアプリ上の動きは花まるラボのプログラミングチームの方が実装してくれました。
+          <br />
+        </p>
+        <p>
           <strong>要件：</strong>
           <br />
           壁を回して、まっすぐ飛ぶ何かを反射させてゴールに当てる
@@ -149,8 +162,6 @@ const PROJECTS = [
           鏡の壁は、固定されていて回すことしかできない印象を与えるため、
           軸と歯車のイメージを利用しています
           <br />
-          
-
         </p>
         <a
           className="button"
@@ -187,10 +198,7 @@ export const ProjectsBoxes = () => (
     <div className="flex-row">
       {PROJECTS.map(projects => (
         <div className="projects-box flex-row" key={projects.id}>
-          <img
-            src={projects.image}
-            alt={projects.title}
-          />
+          <img src={projects.image} alt={projects.title} />
           <div style={{ flex: "1 0 40vw" }}>
             <h2 className="title">{projects.title}</h2>
             <div>{projects.excerpt}</div>
@@ -237,8 +245,7 @@ const Projects = props => {
       </ContentBox>
       <ContentBox theme="white">
         <h1>{Projects.title}</h1>
-        <img src={Projects.image}
-        alt={Projects.titleya} />
+        <img src={Projects.image} alt={Projects.titleya} />
         <p>{Projects.content}</p>
       </ContentBox>
       <BackNavi />
