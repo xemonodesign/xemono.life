@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ContentBox from "./components/ContentBox";
 import Navi from "./components/Navi";
 import BackNavi from "./components/BackNavi";
-import Helmet from 'react-helmet';
+import Helmet from "react-helmet";
 
 import "./App.css";
 
@@ -14,22 +14,30 @@ const NEWS = [
     date: "2019.04.18",
     title:
       "株式会社gumi様にて第一回デザインの基礎講座をデザイン未経験のプログラマーのために行いました",
-      content: (
-        <>
-          株式会社gumi様にてデザイン未経験のプログラマー向けに講座の第一回を行いました。
-          <br />
-          <br />
-          使用した<a href="https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu">スライド</a>が「分かりやすい」とかなりバズりました。
-          <br />
-          <br />
-          はてなブックマークでは<a href="http://b.hatena.ne.jp/entry/s/speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu">ブクマ数2000突破</a>
-          <br />
-          <br />
-          講義とスライドへの反響は<a href="https://togetter.com/li/1339322">こちら(togetter)</a>
-        </>
-      ),
+    content: (
+      <>
+        株式会社gumi様にてデザイン未経験のプログラマー向けに講座の第一回を行いました。
+        <br />
+        <br />
+        使用した
+        <a href="https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu">
+          スライド
+        </a>
+        が「分かりやすい」とかなりバズりました。
+        <br />
+        <br />
+        はてなブックマークでは
+        <a href="http://b.hatena.ne.jp/entry/s/speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu">
+          ブクマ数2000突破
+        </a>
+        <br />
+        <br />
+        講義とスライドへの反響は
+        <a href="https://togetter.com/li/1339322">こちら(togetter)</a>
+      </>
+    ),
     image: require("./images/news20190418.png")
-  }, 
+  },
   {
     type: "link",
     id: "20190411",
@@ -106,7 +114,7 @@ export const NewsBoxes = () => (
           ) : (
             <a href={news.link}>
               <div className="flex-column">
-                <span className="date bold">{news.date}</span>
+                <span className="date bold right">{news.date}</span>
                 <img alt="" src={news.image} />
                 <span className="title">{news.title}</span>
               </div>
@@ -146,9 +154,7 @@ const News = props => {
   return (
     <>
       <Helmet>
-        <title>
-          Xemono - {news.title}
-        </title>
+        <title>Xemono - {news.title}</title>
       </Helmet>
       <ContentBox theme="black">
         <Navi />

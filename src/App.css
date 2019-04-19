@@ -156,6 +156,7 @@ ul.news{
   border-radius: 8px;
   width: calc(50% - var(--basic-margin) /2);
   min-height: 30vh;
+  height: 480px;
   padding: 8px;
   margin: 20px;
 }

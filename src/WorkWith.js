@@ -2,8 +2,8 @@ import React from "react";
 import ContentBox from "./components/ContentBox";
 import Navi from "./components/Navi";
 import BackNavi from "./components/BackNavi";
-import Slide from './components/Slide'
-import Helmet from 'react-helmet'
+import Slide from "./components/Slide";
+import Helmet from "react-helmet";
 
 import "./App.css";
 
@@ -124,9 +124,7 @@ const WorkWith = props => {
   return (
     <>
       <Helmet>
-        <title>
-          Xemono - {workwith.title}
-        </title>
+        <title>Xemono - {workwith.title}</title>
       </Helmet>
       <ContentBox theme="black">
         <Navi />

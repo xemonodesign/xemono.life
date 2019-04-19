@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ContentBox from "./components/ContentBox";
 import Navi from "./components/Navi";
 import BackNavi from "./components/BackNavi";
-import Helmet from 'react-helmet';
+import Helmet from "react-helmet";
 
 import "./App.css";
 
@@ -241,9 +241,7 @@ const Projects = props => {
   return (
     <>
       <Helmet>
-        <title>
-          Xemono - {Projects.title}
-        </title>
+        <title>Xemono - {Projects.title}</title>
       </Helmet>
       <ContentBox theme="black">
         <Navi />
