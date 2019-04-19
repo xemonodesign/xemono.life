@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ContentBox from "./components/ContentBox";
 import Navi from "./components/Navi";
 import BackNavi from "./components/BackNavi";
+import Helmet from 'react-helmet';
 
 import "./App.css";
 
@@ -144,6 +145,11 @@ const News = props => {
   }
   return (
     <>
+      <Helmet>
+        <title>
+          Xemono - {news.title}
+        </title>
+      </Helmet>
       <ContentBox theme="black">
         <Navi />
 

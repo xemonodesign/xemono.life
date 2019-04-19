@@ -3,6 +3,7 @@ import ContentBox from "./components/ContentBox";
 import Navi from "./components/Navi";
 import BackNavi from "./components/BackNavi";
 import Slide from './components/Slide'
+import Helmet from 'react-helmet'
 
 import "./App.css";
 
@@ -43,7 +44,7 @@ const WORKWITH = [
           <li>第三回　UX講座</li>
         </ul>
         <Slide />
-        <h2>デザインのかかりつけ医</h2>
+        <h2>その他、デザインのかかりつけ医やります</h2>
         <ul>
           <li>せっかくアプリを作ったのに、なぜだか使いづらく、改善したい</li>
           <li>UXを考えられる社員を育てたいので講座を開いてほしい</li>
@@ -122,6 +123,11 @@ const WorkWith = props => {
   }
   return (
     <>
+      <Helmet>
+        <title>
+          Xemono - {workwith.title}
+        </title>
+      </Helmet>
       <ContentBox theme="black">
         <Navi />
         <h1>{workwith.title}</h1>
