@@ -9,9 +9,33 @@ const WORKWITH = [
   {
     id: "consulting",
     title: "コンサルティング",
-    sub: "デザインのかかりつけ医",
+    sub: "デザイン講座やります",
     content: (
+      <>
       <p>
+      
+      <h3>講義パックのご案内</h3>
+      <h4>
+デザイン初心者のための基礎/UI/UX（全三回）</h4>
+      <ul>
+        <li><strong>所要時間</strong>： 1回3時間（喋り1時間+休憩30分+相談会1時間半）</li>
+        <li><strong>人数</strong>:20人程度（それ以上はご相談）</li>
+        <li>
+        <strong>料金</strong>: 一回20万(三回セットで50万)
+        </li>
+        <li>
+        <strong>備考</strong>:突っ込めば突っ込むほど良い話ボロボロ喋るよ
+        </li>
+       </ul>
+       <h5>講義内容</h5>
+       <ul>
+        <li>第一回　デザインの基礎（スライドは<a href="https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu">こちら</a>）</li>
+        <li>第二回　UI講座</li>
+        <li>第三回　UX講座</li>
+        </ul>
+    </p>
+      <p>
+      <h2>デザインのかかりつけ医</h2>
         <ul>
           <li>せっかくアプリを作ったのに、なぜだか使いづらく、改善したい</li>
           <li>UXを考えられる社員を育てたいので講座を開いてほしい</li>
@@ -22,6 +46,7 @@ const WORKWITH = [
         </ul>
         などのお悩み、相談に乗ります。
       </p>
+      </>
     )
   },
   {

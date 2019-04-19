@@ -78,6 +78,25 @@ h2 {
   padding: 20px 0;
 }
 
+h3{
+  font-size: var(--font-medium);
+  color: var(--xcolor-black);
+  padding: 10px 0s;
+}
+
+h4{
+  font-size: var(--font-medium);
+  color: var(--xcolor-black);
+  padding: 10px 0s;
+}
+
+h5{
+  font-size: var(--font-medium);
+  color: var(--xcolor-blue);
+  padding: 0;
+}
+
+
 img {
   margin: 20px;
   max-width: calc(100% - 40px);
@@ -99,7 +118,11 @@ blockquote {
 }
 
 ul{
-  margin: 4rem;
+  margin: 1rem 4rem 4rem 4rem;
+}
+
+li {
+  margin: 0.6rem;
 }
 
 
