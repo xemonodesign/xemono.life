@@ -8,6 +8,28 @@ import "./App.css";
 
 const NEWS = [
   {
+    type: "entry",
+    id: "20190418",
+    date: "2019.04.18",
+    title:
+      "株式会社gumi様にて第一回デザインの基礎講座をデザイン未経験のプログラマーのために行いました",
+      content: (
+        <>
+          株式会社gumi様にてデザイン未経験のプログラマー向けに講座の第一回を行いました。
+          <br />
+          <br />
+          使用した<a href="https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu">スライド</a>が「分かりやすい」とかなりバズりました。
+          <br />
+          <br />
+          はてなブックマークでは<a href="http://b.hatena.ne.jp/entry/s/speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu">ブクマ数2000突破</a>
+          <br />
+          <br />
+          講義とスライドへの反響は<a href="https://togetter.com/li/1339322">こちら(togetter)</a>
+        </>
+      ),
+    image: require("./images/news20190418.png")
+  }, 
+  {
     type: "link",
     id: "20190411",
     date: "2019.04.11",

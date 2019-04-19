@@ -68,7 +68,7 @@ a:hover, a:active, a:focus{
 }
 
 h1{
-  font-size: var(--font-xlarge);
+  font-size: var(--font-large);
   margin: 40px 0;
 }
 
