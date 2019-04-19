@@ -2,6 +2,7 @@ import React from "react";
 import ContentBox from "./components/ContentBox";
 import Navi from "./components/Navi";
 import BackNavi from "./components/BackNavi";
+import Slide from './components/Slide'
 
 import "./App.css";
 
@@ -41,6 +42,7 @@ const WORKWITH = [
           <li>第二回　UI講座</li>
           <li>第三回　UX講座</li>
         </ul>
+        <Slide />
         <h2>デザインのかかりつけ医</h2>
         <ul>
           <li>せっかくアプリを作ったのに、なぜだか使いづらく、改善したい</li>
