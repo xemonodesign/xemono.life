@@ -57,7 +57,7 @@ body{
 
 a {
   display: inline-block;
-  padding: .5rem;
+  padding: .2rem;
 }
 
 a:hover, a:active, a:focus{
@@ -122,7 +122,7 @@ ul{
 }
 
 li {
-  margin: 0.6rem;
+  margin: 0.8rem;
 }
 
 
@@ -132,6 +132,7 @@ ul.news{
 }
 
 .news li {
+  margin: 0;
   list-style-type: none;
   border-top: var(--xcolor-gray) 1px solid;
   border-bottom: var(--xcolor-gray) 1px solid;
