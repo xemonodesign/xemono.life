@@ -40,7 +40,7 @@ const WORKWITH = [
             </a>
             ）
           </li>
-          <li>第二回　UI講座</li>
+          <li>第二回　UIデザインをはじめよう(スライドは<a href="https://speakerdeck.com/kinakobooster/uidezainwohazimeyou">こちら</a>)</li>
           <li>第三回　UX講座</li>
         </ul>
         <Slide />
