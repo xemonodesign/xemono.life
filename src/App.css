@@ -159,6 +159,7 @@ ul.news{
   height: 480px;
   padding: 8px;
   margin: 20px;
+  overflow-y: scroll;
 }
 
 .news-box a {
