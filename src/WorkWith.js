@@ -43,7 +43,10 @@ const WORKWITH = [
           <li>第二回　UIデザインをはじめよう(スライドは<a href="https://speakerdeck.com/kinakobooster/uidezainwohazimeyou">こちら</a>)</li>
           <li>第三回　UX講座</li>
         </ul>
-        <Slide />
+        
+        <Slide　dataID="f3dcbd9c455740c6a630870105217d0a" />
+        <Slide　dataID="5a5ea1bcc67c4f82b1371a6b0656f6b8" />
+        
         <h2>その他、デザインのかかりつけ医やります</h2>
         <ul>
           <li>せっかくアプリを作ったのに、なぜだか使いづらく、改善したい</li>
