@@ -10,6 +10,26 @@ import "./App.css";
 const NEWS = [
   {
     type: "entry",
+    id: "20190508",
+    date: "2019.05.08",
+    title:
+      "株式会社gumi様にて第三回デザインの基礎講座（UX編・最終回）をデザイン未経験のプログラマーのために行いました",
+    content: (
+      <>
+        株式会社gumi様にてデザイン未経験のプログラマー向けに講座の第三回を行いました。
+        <br />
+        <br />
+        使用したスライドは <a href="https://speakerdeck.com/kinakobooster/jin-ri-karadekiruuxdezain">こちら</a>
+        <br />
+        <br />
+        講義とスライドへの反響は
+        <a href="https://togetter.com/li/1353111">こちら(togetter)</a>
+      </>
+    ),
+    image: require("./images/news20190508.png")
+  },
+  {
+    type: "entry",
     id: "20190423",
     date: "2019.04.23",
     title:
