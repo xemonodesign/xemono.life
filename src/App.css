@@ -162,6 +162,13 @@ ul.news{
   overflow-y: scroll;
 }
 
+@media screen and (max-width:767px){
+  .news-box{
+    width: auto;
+    height: auto;
+  }
+} 
+
 .news-box a {
   width: 100%;
   text-decoration: none;
