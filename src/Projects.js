@@ -9,6 +9,129 @@ import "./App.css";
 
 const PROJECTS = [
   {
+    id: "scandal_idol",
+    title: "web連載漫画「不祥事アイドル」PR動画",
+    image: require("./images/scandal_idol/main.png"),
+    excerpt: (
+      <>
+        <p>
+          株式会社白泉社様から、「不祥事アイドル」のPR動画の作成を請け負いました。
+        </p>
+        <p>
+          各ユニットの雰囲気の違いを表現し、キャラクターの魅力が存分に伝わるよう意識しながら、TikTokやマンガPark、YouTubeなどへと多面的に展開できるよう、15秒の動画を作成しました。
+        </p>
+      </>
+    ),
+    content: (
+      <>
+        <p>
+          協力期間：2018年6月 ~ <br />
+          カテゴリ：動画
+          <br />
+          クライアント：
+          <a href="http://www.hakusensha.co.jp/">株式会社白泉社</a>
+          <br />
+          ディレクション： とりいめぐみ
+          <br />
+          制作： 庭石
+        </p>
+        <p>
+          株式会社白泉社様から、{" "}
+          <a
+            href="https://manga-park.com/title/9350"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            「不祥事アイドル」
+          </a>
+          のPR動画の作成を請け負いました。
+        </p>
+        <p>
+          各ユニットの雰囲気の違いを表現し、キャラクターの魅力が存分に伝わるよう意識しながら、TikTokやマンガPark、YouTubeなどへと多面的に展開できるよう、15秒の動画を作成しました。
+        </p>
+        <p>
+          原作のギャグシーンや見せゴマの良さを活かし、15秒という短い時間ならではの緩急をつけています。あえてテンポはかなり速めにして、多くの情報が流れるタイムラインにも埋もれず、繰り返し見てもらえるような動画にしました。
+        </p>
+        <p>
+          『不祥事アイドル』は、挫折を味わいながら新たな一歩を踏み出そうとするアイドル達を、応援したくなると同時に読み手も励まされるような漫画です。
+          <br />
+          なので明るく元気な存在感と、前向きなキラキラとした姿をアピールするため、色調を明るくしました。また原作の掛け合いの楽しさを活かすため、台詞はとにかくテンポよく、BGMとタイミングを合わせて読んでもらえるようにしました。
+        </p>
+        <p>
+          ツイッター連載（
+          <a href="https://twitter.com/fushoji_idol">@fushoji_idol</a>
+          ）の前日譚では、4人グループ結成前の、東雲きよしと蕪木一世、橘瑠衣と花笠保のコンビに焦点が絞られているのも見どころです。
+          <br />
+          活動が順調であればきっと組むことのなかったきよしと一世の出会いは劇的なもので、原作の縦長のコマをそのまま使い、時間を長めにとりました。
+        </p>
+        <img alt="出会い" src={require("./images/scandal_idol/deai.gif")} />
+        <p>
+          一世がきよしに「失敗は成功のもとだと証明するんだ」と言うシーンは絵と台詞の力強さをそのまま見せるために演出はあえて控えめにし、一瞬光を散らして印象が鮮烈になるようにしました。
+        </p>
+        <img
+          alt="証明するんだ"
+          src={require("./images/scandal_idol/shoumei.gif")}
+        />
+        <p>
+          一方瑠衣と保は気心が知れており、自宅謹慎中なので少し落ち着いた日常的な雰囲気にしました。仲が良いのか悪いのか分からないような会話を繰り広げる二人に合わせて演出を変え、保のふんわりした空気に飲まれそうになってからのオチと、なにやらバタバタしそうな楽しい予感を印象づけて終わるようにしました。
+        </p>
+        掛け合いとギャグシーンの楽しい漫画なので、ぜひ本編の方も楽しんでいただければと思います。
+        <h2>白泉社 井手様のコメント</h2>
+        <blockquote>
+          <p>
+            マンガは、読み手それぞれのスピードで読めるものなので、動画で見せるのはとても難しいと感じていました。
+          </p>
+
+          <p>
+            今回「不祥事アイドル」の動画を作成いただくにあたり、
+            マンガの内容がわかりつつテンポよく、というリクエストをしましたが、
+            内容を理解してくださったうえで緩急をつけた見せ方をしていただき、
+            とても満足いくものができました。
+          </p>
+
+          <p>
+            作品の持ち味である、面白くて楽しくてイケメンで応援したい！要素も
+            汲み取っていただき、ありがとうございました！
+          </p>
+        </blockquote>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/LMWhVmjr9T0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        {/*
+        <a
+          className="button"
+          href="https://youtu.be/Mt1Few7eCWI"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PR動画　橘瑠衣と花笠保
+        </a>
+        */}
+        <a
+          className="button"
+          href="https://twitter.com/fushoji_idol"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ツイッター連載（@fushoji_idol）
+        </a>
+        <a
+          className="button"
+          href="https://manga-park.com/title/9350"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          マンガPARK 「不祥事アイドル」
+        </a>
+      </>
+    )
+  },
+  {
     id: "thinkthink",
     title: "Think! Think!",
     image: require("./images/thinkthink1.png"),

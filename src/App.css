@@ -57,7 +57,7 @@ body{
 
 a {
   display: inline-block;
-  padding: .2rem;
+  padding: .1rem;
 }
 
 a:hover, a:active, a:focus{
@@ -95,7 +95,6 @@ h5{
   color: var(--xcolor-gray);
   padding: 0;
 }
-
 
 img {
   margin: 20px;
@@ -367,6 +366,9 @@ ul.news{
   overflow: wrap;
 }
 
+.projects-box {
+  margin: calc(var(--basic-margin) / 2) 0;
+}
 
 /* layout */
 .right{
@@ -425,6 +427,7 @@ button, a.button {
   padding: .5rem;
   text-decoration: none;
   display: block;
+  margin: 20px 0 ;
 }
 button:hover, button:active, button:focus ,a.button:hover, a.button:active, a.button:focus {
   background: var(--xcolor-yellow);
