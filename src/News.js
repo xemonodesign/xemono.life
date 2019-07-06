@@ -19,7 +19,10 @@ const NEWS = [
         株式会社gumi様にてデザイン未経験のプログラマー向けに講座の第三回を行いました。
         <br />
         <br />
-        使用したスライドは <a href="https://speakerdeck.com/kinakobooster/jin-ri-karadekiruuxdezain">こちら</a>
+        使用したスライドは{" "}
+        <a href="https://speakerdeck.com/kinakobooster/jin-ri-karadekiruuxdezain">
+          こちら
+        </a>
         <br />
         <br />
         講義とスライドへの反響は
@@ -39,7 +42,10 @@ const NEWS = [
         株式会社gumi様にてデザイン未経験のプログラマー向けに講座の第二回を行いました。
         <br />
         <br />
-        使用したスライドは <a href="https://speakerdeck.com/kinakobooster/uidezainwohazimeyou">こちら</a>
+        使用したスライドは{" "}
+        <a href="https://speakerdeck.com/kinakobooster/uidezainwohazimeyou">
+          こちら
+        </a>
         <br />
         <br />
         講義とスライドへの反響は
