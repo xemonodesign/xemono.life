@@ -124,7 +124,7 @@ const PROJECTS = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          マンガPARK 「不祥事アイドル」
+          マンガPark 「不祥事アイドル」
         </a>
       </>
     )
