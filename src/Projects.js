@@ -102,16 +102,14 @@ const PROJECTS = [
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         />
-        {/*
-        <a
-          className="button"
-          href="https://youtu.be/Mt1Few7eCWI"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          PR動画　橘瑠衣と花笠保
-        </a>
-        */}
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/tW1JejgltuI"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
         <a
           className="button"
           href="https://twitter.com/fushoji_idol"
