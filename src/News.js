@@ -121,11 +121,13 @@ const NEWS = [
 
 const NewsById = id => NEWS.find(news => news.id === id);
 
+const newNews = NEWS.filter((news, index) => index < 3);
+
 export const NewsList = () => (
   <>
     <h2>news</h2>
     <ul className="news">
-      {NEWS.map(news => (
+      {newNews.map(news => (
         <li key={news.id}>
           {news.type === "entry" ? (
             <Link to={`/news/${news.id}`}>
