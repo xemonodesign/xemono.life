@@ -130,6 +130,69 @@ const PROJECTS = [
     )
   },
   {
+    id: "heisei_nenpyo",
+    title: "平成ゲーム年表",
+    image: require("./images/heisei_nenpyo/main1.png"),
+    excerpt: (
+      <>
+        <p>
+          ウェブメディア「電ファミニコゲーマー」の平成を締めくくる企画「平成ゲーム年表」のテンプレート作成を請け負いました。
+        </p>
+      </>
+    ),
+    content: (
+      <>
+        <p>
+          協力期間：2019年4月 <br />
+          カテゴリ：ウェブサイト
+          <br />
+          クライアント：
+          <a href="https://news.denfaminicogamer.jp/">
+            株式会社ドワンゴ 電ファミニコゲーマー
+          </a>
+          <br />
+          デザイン・コーディング：{" "}
+          <a href="https://twitter.com/yamatoiizuka">
+            いいづかやまと @yamatoiizuka
+          </a>
+          <br />
+          文・写真・編集：{" "}
+          <a href="https://twitter.com/denfaminicogame">
+            電ファミニコゲーマー編集部 @denfaminicogame
+          </a>
+        </p>
+        <p>
+          ウェブメディア「電ファミニコゲーマー」の平成を締めくくる企画「平成ゲーム年表」のテンプレート作成を請け負いました。
+        </p>
+        <p>
+          スワイプにもタップにも反応する使いやすいナビゲーションや、テーマカラーを活かしてシンプルで見やすいデザインを追求しました。
+        </p>
+
+        <h2>電ファミ担当者のコメント</h2>
+        <blockquote>
+          <p>
+            担当者が人間性とセンスに欠けており困っていたので、Xemonoさんに依頼しました。
+          </p>
+
+          <p>
+            すると人間味とセンスにあふれたデザインが返ってきましたので、たいへん満足しております。
+          </p>
+
+          <p>今後も困るたびに依頼しようと思います。ありがとうございました。</p>
+        </blockquote>
+
+        <a
+          className="button"
+          href="https://news.denfaminicogamer.jp/heisei-game-chronicle"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          電ファミ平成ゲーム年表
+        </a>
+      </>
+    )
+  },
+  {
     id: "thinkthink",
     title: "Think! Think!",
     image: require("./images/thinkthink1.png"),
