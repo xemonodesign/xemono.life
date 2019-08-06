@@ -144,34 +144,6 @@ const Home = () => (
             </p>
             紹介者：かわの
           </blockquote>
-          <h3>取引先からの声</h3>
-          <blockquote class="twitter-tweet" data-lang="ja">
-            <p lang="ja" dir="ltr">
-              React が書ける UI/UX デザイナーとして雇った{" "}
-              <a href="https://twitter.com/kinakobooster?ref_src=twsrc%5Etfw">
-                @kinakobooster
-              </a>{" "}
-              は実は何よりもすごいのがヒアリング能力だという事に気付いた。彼女は何が欲しいのかをデザイン視点からきっちり動くデザイン付きのモックが作れる。
-            </p>
-            &mdash; V (@voluntas){" "}
-            <a href="https://twitter.com/voluntas/status/1110905626186518530?ref_src=twsrc%5Etfw">
-              2019年3月27日
-            </a>
-          </blockquote>
-          <blockquote class="twitter-tweet" data-lang="ja">
-            <p lang="ja" dir="ltr">
-              ヒアリング能力が異常に高いし、文章としてまとめる能力も高い。これはズルすぎる。文章にまとめさえすれば他の人にも依頼しやすい。チーム戦に欲しい人材。
-            </p>
-            &mdash; V (@voluntas){" "}
-            <a href="https://twitter.com/voluntas/status/1110906626469298176?ref_src=twsrc%5Etfw">
-              2019年3月27日
-            </a>
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          />
         </div>
       </FlexBox>
       <FlexBox>
