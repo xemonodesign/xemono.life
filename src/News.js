@@ -10,6 +10,29 @@ import "./App.css";
 const NEWS = [
   {
     type: "entry",
+    id: "20190706",
+    date: "2019.07.06",
+    title:
+      "株式会社白泉社様から、「不祥事アイドル」のPR動画二本が公開されました",
+    content: (
+      <>
+        株式会社白泉社様から、「不祥事アイドル」のPR動画二本が公開されました。
+        <br />
+        <br />{" "}
+        <a href="https://twitter.com/fushoji_idol/status/1152887750342823936">
+          「不祥事アイドル」キャラクター紹介PV①きよし＆いっくん編
+        </a>
+        <br />
+        <br />
+        <a href="https://twitter.com/fushoji_idol/status/1154721549334671362">
+          「不祥事アイドル」キャラクター紹介PV②瑠衣＆保編
+        </a>
+      </>
+    ),
+    image: require("./images/news20190706.png")
+  },
+  {
+    type: "entry",
     id: "20190508",
     date: "2019.05.08",
     title:
