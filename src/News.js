@@ -10,6 +10,84 @@ import "./App.css";
 const NEWS = [
   {
     type: "entry",
+    id: "20190801",
+    date: "2019.08.01",
+    title:
+      "株式会社白泉社様から、「ニラメッコ」EXITコラボネタ動画が三本公開されました",
+    content: (
+      <>
+        株式会社白泉社様から、「ニラメッコ」EXITコラボネタ動画が三本公開されました。
+        <br />
+        <br />{" "}
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/wPRFCzbp2oQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        <br />
+        <br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/zANtCZFowP8"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/zK8cS_FY4n8"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        <a href="https://www.younganimal.com/niramekko_exit/">
+          「ニラメッコ」特設サイトはこちら
+        </a>
+      </>
+    )
+  },
+  {
+    type: "entry",
+    id: "20190723",
+    date: "2019.07.23",
+    title:
+      "株式会社白泉社様から、「ニラメッコ」EXITコラボ紹介動画が二本公開されました",
+    content: (
+      <>
+        株式会社白泉社様から、「ニラメッコ」EXITコラボ紹介動画が二本公開されました。
+        <br />
+        <br />{" "}
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/pBp22l2ICkw"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        <br />
+        <br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Cuu744F4IuQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        <a href="https://www.younganimal.com/niramekko_exit/">
+          「ニラメッコ」特設サイトはこちら
+        </a>
+      </>
+    )
+  },
+  {
+    type: "entry",
     id: "20190706",
     date: "2019.07.06",
     title:
