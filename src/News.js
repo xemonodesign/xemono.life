@@ -49,7 +49,8 @@ const NEWS = [
           「ニラメッコ」特設サイトはこちら
         </a>
       </>
-    )
+    ),
+    image: require("./images/news20190801.jpg")
   },
   {
     type: "entry",
@@ -84,7 +85,8 @@ const NEWS = [
           「ニラメッコ」特設サイトはこちら
         </a>
       </>
-    )
+    ),
+    image: require("./images/news20190723.jpg")
   },
   {
     type: "entry",
