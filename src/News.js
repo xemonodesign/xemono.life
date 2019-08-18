@@ -6,7 +6,7 @@ import BackNavi from "./components/BackNavi";
 import Helmet from "react-helmet";
 
 import "./App.css";
-
+import Slide from "./components/Slide";
 const NEWS = [
   {
     type: "entry",
@@ -85,6 +85,34 @@ const NEWS = [
         </a>
       </>
     )
+  },
+  {
+    type: "entry",
+    id: "20190708",
+    date: "2019.07.08",
+    title:
+      "日鉄ソリューションズ株式会社様にて、デザイン基礎講座・スライド添削ワークショップを行いました",
+    content: (
+      <>
+        <p>
+          日鉄ソリューションズ株式会社様のNSSOLアカデミーのUIデザインセミナー企画にて、弊社代表の鳥居が30人を前に3時間にわたってデザイン基礎講座とスライド添削ワークショップを行いました。
+        </p>
+        <br />
+        使用したスライドはこちら
+        <Slide dataID="f3dcbd9c455740c6a630870105217d0a" />
+        <br />
+        「単なる技術の習得だけではなく、自身のデザインに対する距離感が縮まったように思います。」
+        <br />
+        「認知負荷を下げる、世界観を合わせる、使う色も同じ仲間でなど、すぐに活用できる。」
+        <br />
+        「受講者のスライド添削は実例がもとになっているので、ものすごく勉強になりました。」
+        <br />
+        <br />
+        などの反響がありました。
+        <br />
+      </>
+    ),
+    image: require("./images/P1010027.JPG")
   },
   {
     type: "entry",
