@@ -9,6 +9,145 @@ import "./App.css";
 
 const PROJECTS = [
   {
+    id: "niramekko",
+    title: "ヤングアニマルZERO連載漫画「ニラメッコ」EXITコラボ動画",
+    image: require("./images/niramekko/main.png"),
+    excerpt: (
+      <>
+        <p>
+          株式会社白泉社様から、漫画「ニラメッコ」とお笑いコンビEXIT様のコラボ動画の作成を請け負いました。
+        </p>
+        <p>
+          TikTokやTwitter、YouTubeなどへと多方面に展開できるよう、15秒の動画を作成しました。
+        </p>
+      </>
+    ),
+    content: (
+      <>
+        <ul>
+          <li>
+            協力期間：2018年7月 ~ <br />
+          </li>
+          <li>カテゴリ：動画</li>
+          <li>
+            クライアント：
+            <a href="http://www.hakusensha.co.jp/">株式会社白泉社</a>
+          </li>
+          <li>ディレクション： とりいめぐみ</li>
+          <li>制作： 庭石</li>
+        </ul>
+        <p>
+          株式会社白泉社様から、漫画「ニラメッコ」とお笑いコンビEXIT様のコラボ動画の作成を請け負いました。
+          <br />
+          漫画の紹介動画2本と、作中コンビがネタを演じている動画を3組×2本、合計8本の動画を制作いたしました。
+          <br />
+        </p>
+        <p>
+          <a href="https://www.younganimal.com/niramekko_exit/">
+            「ニラメッコ」
+          </a>
+          は大人数のキャラクターが力まずに掛け合いをする楽しげな雰囲気と共に、そんな彼らが「人を笑わせる」ことへの真摯さも表現されていて、多面的に楽しめる漫画です。
+        </p>
+        <h2>紹介動画</h2>
+        <p>
+          漫画の多面的な魅力を活かすため、キャラクター紹介を中心にしたバージョン（通称チャラver.）とコンビの信頼関係を中心にしたバージョン（通称エモver.）と雰囲気の違う動画を二本作成しました。
+          <br />
+          チャラverでは大人数でのルームシェアという点を強調し、賑やかさと生活感を意識して制作しました。
+          <br />
+          エモverではメインコンビに焦点を絞り、「笑い」を支える信頼関係を描く漫画であることを伝えました。
+          <br />
+          どちらもEXIT様の軽快な掛け合いを載せていただき、ジッターの皆様にも支持をいただいて、合計約2万再生を突破いたしました。（2019年8月時点）
+        </p>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "49%" }}
+            src={require("./images/niramekko/chara.gif")}
+            alt="チャラver."
+          />
+          <img
+            style={{ maxWidth: "49%" }}
+            src={require("./images/niramekko/emo.gif")}
+            alt="エモver."
+          />
+        </div>
+        <h2>ネタ動画</h2>
+        <p>
+          また「作中コンビのネタをEXIT様がアテレコ」という設定のネタ動画では、掛け合いのテンポの良さを字幕と動きで強調しつつ、キャラクターが現実世界に居るかのような楽しみ方ができるように作成しました。ネタの内容によって変わるEXIT様の演技に合わせ、各コンビの個性を感じてもらえるよう色合いや動きなどを意識し、制作いたしました。
+          <br />
+          各動画は5万以上の再生をいただき、EXIT様の普段とは違う魅力をお伝えできたかと思います。
+        </p>
+        <h3>各コンビごと</h3>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "33%" }}
+            src={require("./images/niramekko/niramekko1.gif")}
+            alt="ニラメッコ"
+          />
+          <img
+            style={{ maxWidth: "33%" }}
+            src={require("./images/niramekko/itako1.gif")}
+            alt="潮来"
+          />
+          <img
+            style={{ maxWidth: "33%" }}
+            src={require("./images/niramekko/kadoma1.gif")}
+            alt="門真アミーゴ"
+          />
+        </div>
+        <p>
+          ・ニラメッコ
+          <br />
+          ゆるめなシュール系コンビだがツッコミはしっかり入るので、掛け合いが自然と頭に入るよう字幕のタイミングを調整しつつ、ツッコミがオチとしてしっかり決まるような動きや字幕にしました。
+        </p>
+        <p>
+          ・潮来
+          <br />
+          ダウナー系なので動きも字幕も最小限にし、じわじわとした笑いが伝わるように。色合いも薄暗くしてミステリアスな雰囲気を出しました。
+        </p>
+        <p>
+          ・門真アミーゴ
+          <br />
+          元気な正統派しゃべくりコンビなので、勢いが伝わるように動きも字幕も大きく、また畳み掛けるボケを気持ちよく楽しめるよう、映像、音声、字幕のタイミングを大事にしました。
+        </p>
+        {/* 全部公開後に掲載
+        <h3>2周目</h3>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "33%" }}
+            src={require("./images/niramekko/niramekko2.gif")}
+            alt="ニラメッコ"
+          />
+          <img
+            style={{ maxWidth: "33%" }}
+            src={require("./images/niramekko/itako2.gif")}
+            alt="潮来"
+          />
+          <img
+            style={{ maxWidth: "33%" }}
+            src={require("./images/niramekko/kadoma2.gif")}
+            alt="門真アミーゴ"
+          />
+        </div>
+        <p>
+          既に1周目をご覧いただいた方にも楽しんでもらえるよう、内容に合わせて背景や色合いを変え、ネタの空気がより伝わるようにしました。
+        </p>
+        */}
+        <h2>白泉社 長谷川様のコメント</h2>
+        <blockquote>
+          限られた素材でしたが、うまく活かしていただきありがとうございます。人形劇風のネタ動画は初見では正直驚きましたが笑、ありきたりな見た目だと流されてしまうのでこれくらいのインパクトあってよかったです。遊べる企画の際はまたよろしくお願いします！
+        </blockquote>
+        <a
+          className="button"
+          href="https://www.younganimal.com/niramekko_exit/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          「ニラメッコ」特設サイト
+        </a>
+      </>
+    )
+  },
+  {
     id: "scandal_idol",
     title: "web連載漫画「不祥事アイドル」PR動画",
     image: require("./images/scandal_idol/main.png"),
@@ -24,17 +163,16 @@ const PROJECTS = [
     ),
     content: (
       <>
-        <p>
-          協力期間：2018年6月 ~ <br />
-          カテゴリ：動画
-          <br />
-          クライアント：
-          <a href="http://www.hakusensha.co.jp/">株式会社白泉社</a>
-          <br />
-          ディレクション： とりいめぐみ
-          <br />
-          制作： 庭石
-        </p>
+        <ul>
+          <li>協力期間：2018年6月 ~ </li>
+          <li>カテゴリ：動画</li>
+          <li>
+            クライアント：
+            <a href="http://www.hakusensha.co.jp/">株式会社白泉社</a>
+          </li>
+          <li>ディレクション： とりいめぐみ</li>
+          <li>制作： 庭石</li>
+        </ul>
         <p>
           株式会社白泉社様から、{" "}
           <a
@@ -92,7 +230,7 @@ const PROJECTS = [
           <p>
             作品の持ち味である、面白くて楽しくてイケメンで応援したい！要素も
             汲み取っていただき、ありがとうございました！
-          </p>
+            </p>
         </blockquote>
         <iframe
           width="560"
@@ -142,25 +280,28 @@ const PROJECTS = [
     ),
     content: (
       <>
-        <p>
-          協力期間：2019年4月 <br />
-          カテゴリ：ウェブサイト
-          <br />
-          クライアント：
-          <a href="https://news.denfaminicogamer.jp/">
-            株式会社ドワンゴ 電ファミニコゲーマー
-          </a>
-          <br />
-          デザイン・コーディング：{" "}
-          <a href="https://twitter.com/yamatoiizuka">
-            いいづかやまと @yamatoiizuka
-          </a>
-          <br />
-          文・写真・編集：{" "}
-          <a href="https://twitter.com/denfaminicogame">
-            電ファミニコゲーマー編集部 @denfaminicogame
-          </a>
-        </p>
+        <ul>
+          <li>協力期間：2019年4月</li>
+          <li>カテゴリ：ウェブサイト</li>
+          <li>
+            クライアント：
+            <a href="https://news.denfaminicogamer.jp/">
+              株式会社ドワンゴ 電ファミニコゲーマー
+            </a>
+          </li>
+          <li>
+            デザイン・コーディング：{" "}
+            <a href="https://twitter.com/yamatoiizuka">
+              いいづかやまと @yamatoiizuka
+            </a>
+          </li>
+          <li>
+            文・写真・編集：{" "}
+            <a href="https://twitter.com/denfaminicogame">
+              電ファミニコゲーマー編集部 @denfaminicogame
+            </a>
+          </li>
+        </ul>
         <p>
           ウェブメディア「電ファミニコゲーマー」の平成を締めくくる企画「平成ゲーム年表」のテンプレート作成を請け負いました。
         </p>
@@ -206,12 +347,15 @@ const PROJECTS = [
     ),
     content: (
       <>
-        <p>
-          協力期間：2015年4月 ~
-          2017年11月（代表鳥居による、株式会社花まるラボ所属時の仕事）
-        </p>
-        <p>担当：Adobe Illustratorを使用したパズルやキャラクターのデザイン</p>
-
+        <ul>
+          <li>
+            協力期間：2015年4月 ~
+            2017年11月（代表鳥居による、株式会社花まるラボ所属時の仕事）
+          </li>
+          <li>
+            担当：Adobe Illustratorを使用したパズルやキャラクターのデザイン
+          </li>
+        </ul>
         <p>
           <a href="https://www.hanamarulab.com/">株式会社花まるラボ</a>
           にて、小学生向け教材アプリThink!
@@ -432,9 +576,11 @@ const Projects = props => {
         <h1>Projects</h1>
       </ContentBox>
       <ContentBox theme="white">
-        <h1>{Projects.title}</h1>
-        <img src={Projects.image} alt={Projects.titleya} />
-        <p>{Projects.content}</p>
+        <div className="text-box">
+          <h1>{Projects.title}</h1>
+          <img src={Projects.image} alt={Projects.titleya} />
+          {Projects.content}
+        </div>
       </ContentBox>
       <BackNavi />
     </>
