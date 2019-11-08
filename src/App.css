@@ -7,7 +7,7 @@ body{
   text-align: left;
   overflow-x: hidden;
   font-feature-settings: 'palt';
-  
+
 }
 
 :root {
@@ -28,7 +28,7 @@ body{
   --basic-margin: 100px;
   --heading-number-display: inline-block;
   --basic-align: left;
-  --basic-flex-direction: row; 
+  --basic-flex-direction: row;
     }
   @media (width < 768px) {
     :root {
@@ -36,7 +36,7 @@ body{
       --basic-margin: 50px;
       --heading-number-display: none;
       --basic-align: center;
-      --basic-flex-direction: row; 
+      --basic-flex-direction: row;
     }
   }
   @media (width < 480px) {
@@ -49,7 +49,7 @@ body{
       --basic-margin: 20px;
       --heading-number-display: none;
       --basic-align: center;
-      --basic-flex-direction: column; 
+      --basic-flex-direction: column;
     }
   }
 
@@ -64,7 +64,7 @@ a {
 
 a:hover, a:active, a:focus{
   background-color: var(--xcolor-yellow);
-  color: var(--xcolor-black) !important; 
+  color: var(--xcolor-black) !important;
   transition: 0.2s;
   text-decoration: none;
 }
@@ -128,7 +128,7 @@ li {
 
 
 
-ul.news{ 
+ul.news{
   margin : 0;
 }
 
@@ -168,7 +168,7 @@ ul.news{
     width: auto;
     height: auto;
   }
-} 
+}
 
 .news-box a {
   width: 100%;
@@ -292,7 +292,7 @@ ul.news{
 }
 
 .text-box img {
-  padding: 20px 4px;   
+  padding: 20px 4px;
   margin: 0;
 }
 
@@ -327,8 +327,8 @@ ul.news{
   background: var(--xcolor-yellow);
 }
 .main-heading .number {
-    font-size: var(--font-xlarge); 
-    line-height: var(--font-xlarge); 
+    font-size: var(--font-xlarge);
+    line-height: var(--font-xlarge);
     display: var(--heading-number-display);
     margin-right: 32px;
     width: calc(var(--font-xlarge) *1.5);
@@ -466,7 +466,7 @@ button:hover, button:active, button:focus ,a.button:hover, a.button:active, a.bu
   color: var(--xcolor-blue);
 }
 
-/* 文字周り */ 
+/* 文字周り */
 
 .text-large{
   font-size: var(--font-large);
@@ -505,4 +505,23 @@ dd {
   color: var(--xcolor-gray);
   margin-bottom: 40px;
 
+}
+
+.ril-caption-content{
+  width:100%;
+}
+.imageCaption-Name {
+  color: white;
+  margin-left: 20%;
+}
+.imageCaption-Name a{
+  display:inline-block;
+  padding-right: 50%;
+  padding-left: 1%;
+}
+.imageCaption-Contents {
+  color: white;
+  opacity: 70%;
+  font-size: 50%;
+  margin-left: 21.5%;
 }

@@ -29,6 +29,12 @@ export default class LBImage extends React.Component {
           <Lightbox
             mainSrc={MainVisual}
             onCloseRequest={() => this.setState({ isOpen: false })}
+            imageCaption={
+              <h1>
+                <span class="imageCaption-Name"><a herf="https://twitter.com/saetsukura">津倉冴</a></span>
+                <p class="imageCaption-Contents">筋肉質な男性と凛とした女性を描くのが得意です。ネット上にイラストを投稿して10年。</p>
+              </h1>
+            }
           />
         )}
       </div>
