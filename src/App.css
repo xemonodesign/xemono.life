@@ -510,18 +510,31 @@ dd {
 .ril-caption-content{
   width:100%;
 }
-.imageCaption-Name {
-  color: white;
+.image-caption {
   margin-left: 20%;
 }
-.imageCaption-Name a{
-  display:inline-block;
+.image-caption-name {
+  color: white;
+  text-decoration: none;
   padding-right: 50%;
-  padding-left: 1%;
+  margin: 0;
 }
-.imageCaption-Contents {
+.image-caption-title {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.image-caption-name p{
+  font-size: 70%;
+  margin-left: 5px;
+  }
+.image-caption-name h1 {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.image-caption-contents {
   color: white;
   opacity: 70%;
-  font-size: 50%;
-  margin-left: 21.5%;
+  font-size: 60%;
+  margin-top: 10px;
+  margin-left: 50px;
 }
