@@ -509,6 +509,7 @@ dd {
 
 .ril-caption-content{
   width:100%;
+  margin-left: 20%;
 }
 .image-caption {
   margin-left: 20%;
@@ -519,15 +520,20 @@ dd {
   padding-right: 50%;
   margin: 0;
 }
-.image-caption-title {
-  display: inline-block;
-  margin-bottom: 0;
+.image-caption-title{
+  margin: 0;
 }
-.image-caption-name p{
-  font-size: 70%;
+.image-caption-drawing {
+  font-weight: normal;
+  font-size: 50%;
   margin-left: 5px;
   }
-.image-caption-name h1 {
+.image-caption-id {
+  font-weight: normal;
+  font-size: 70%;
+  margin-left: 5px;
+}
+.image-caption-artist {
   margin-top: 0;
   margin-left: 10px;
 }
