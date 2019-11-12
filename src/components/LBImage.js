@@ -39,12 +39,12 @@ export default class LBImage extends React.Component {
                     <span className="image-caption-id">(@saetsukura)</span>
                   </h1>
                 </a>
-                <p class="image-caption-contents">筋肉質な男性と凛とした女性を描くのが得意です。ネット上にイラストを投稿して10年。</p>
+                <p class="image-caption-contents"><span class="image-caption-contents-line-1">筋肉質な男性と凛とした女性を描くのが得意です。</span><span class="image-caption-contents-line-2">ネット上にイラストを投稿して10年。</span></p>
               </div>
             }
           />
         )}
-      </div>
+      </div >
     );
   }
 }
