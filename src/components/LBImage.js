@@ -31,7 +31,7 @@ export default class LBImage extends React.Component {
             mainSrc={MainVisual}
             onCloseRequest={() => this.setState({ isOpen: false })}
             imageCaption={
-              <div className=".image-caption">
+              <div className="image-caption">
                 <a href="https://twitter.com/saetsukura" className="image-caption-name">
                   <h1 className="image-caption-title">
                     <span className="image-caption-drawing">絵┃</span>
@@ -44,7 +44,7 @@ export default class LBImage extends React.Component {
             }
           />
         )}
-      </div >
+      </div>
     );
   }
 }
