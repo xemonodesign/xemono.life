@@ -9,6 +9,213 @@ import "./App.css";
 
 const PROJECTS = [
   {
+    id: "touhou",
+    title: "東方我楽多叢誌",
+    image: require("./images/touhou/main.png"),
+    excerpt: (
+      <>
+        <p>
+          ウェブメディア「東方我楽多叢誌」のプラットフォーム作成を請け負いました。
+        </p>
+        <p>
+          「東方Projectらしさ」を全力で表現するとともに、高機能かつ爆速のサイトと管理のしやすさを両立させました。
+        </p>
+      </>
+    ),
+    content: (
+      <>
+        <ul>
+          <li>
+            協力期間：2019年7月 ~ <br />
+          </li>
+          <li>ウェブメディア+CMS</li>
+          <li>ディレクション: とりいめぐみ</li>
+          <li>デザイン:とりいめぐみ、いいづかやまと</li>
+          <li>イラスト: <a href="https://twitter.com/saetsukura">津倉冴 @saetsukura</a></li>
+          <li>コーディング:やなぎ、かねこ、るか</li>
+          <li>メディア運営:株式会社ワイソーシリアス</li>
+        </ul>
+        <p>
+          ウェブメディア「東方我楽多叢誌」のプラットフォーム作成を請け負いました。
+          <br />
+          「東方Projectらしさ」を全力で表現するとともに、高機能かつ爆速のサイトと管理のしやすさを両立させました。
+          <br />
+        </p>
+        <p>
+          管理者が見慣れた画面で快適に記事を投稿・管理できるよう、基本的なシステムはWordPressを用いつつ、高機能かつ爆速のサイトを実現するためにシステムを大幅に換骨奪胎
+        </p>
+        <p>
+          東方Projectは「青春を捧げた」ファンも多いとても力のあるIPですが、そんなファンの皆様に楽しんでいただけるよう、隅々まで「東方らしさ」にこだわったデザインを施しました。
+        </p>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "100%" }}
+            src={require("./images/touhou/bar.png")}
+            alt="津倉冴さんのイラスト集."
+          />
+        </div>
+        <h2>システムの特長</h2>
+        <h3>速さにこだわったウェブサイト構成</h3>
+        <p>
+          遅い回線でもすぐに記事が表示されます。
+          </p>
+        <h3>多言語化対応</h3>
+        <p>
+          中国語版サイト、英語版サイトなど、言語ごとにサイトを複数同時に立てられ、一括に管理できる仕組みを作りました。
+          <br />
+          言語ごとに違うサイトを一から作る必要がなく、簡単に多言語に対応できます。
+          <br />
+          例1:記事の翻訳を他言語版に載せる際、写真は同じものを使いたい
+          <br />
+          例2:特定の記事を中国語サイトにだけ表示させたい
+          <br />
+          といったことが簡単にできます。
+          </p>
+        <h3>カスタム投稿タイプ</h3>
+        <p>
+          WordPressはデフォルトでは投稿できる記事の種類が少ないため、大幅な拡張を行い、要望に合わせて様々な欄を設けました。
+          <br />
+          小説、インタビュー、漫画、キャラ紹介ページなどを作成しました。
+        </p>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "49%" }}
+            src={require("./images/touhou/custom_1.png")}
+            alt="妖世刃弔華."
+          />
+          <img
+            style={{ maxWidth: "49%" }}
+            src={require("./images/touhou/custom_2.png")}
+            alt="東方智霊奇伝."
+          /> <img
+            style={{ maxWidth: "49%" }}
+            src={require("./images/touhou/custom_3.png")}
+            alt="ZUN氏のインタビュー1."
+          /> <img
+            style={{ maxWidth: "49%" }}
+            src={require("./images/touhou/custom_4.png")}
+            alt="ZUN氏のインタビュー2"
+          />
+        </div>
+        <h3>下書きプレビュー機能</h3>
+        <p>
+          このカスタマイズに合わせて、下書きプレビュー機能を改善しました。
+          <br />
+          記事を公開する前に、本番サイトでの見え方を確認できます。
+        </p>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "100%" }}
+            src={require("./images/touhou/draft.png")}
+            alt="下書きプレビュー."
+          />
+        </div>
+        <h3>広告表示</h3>
+        <p>
+          広告を設定できるようにしました。
+              <br />
+          差し込み型広告や全面広告など、自由な型の広告を表示できます。
+        </p>
+        <h3>アナリティクス</h3>
+        <p>
+          サイトへの集客やページビュー、広告クリックなどの情報を収集して分析できます。
+        </p>
+        <h3>SEO</h3>
+        <p>
+          SEOの知見を活かし、検索で上位に出てくるページを作りました。
+        </p>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "100%" }}
+            src={require("./images/touhou/seo.png")}
+            alt="下書きプレビュー."
+          />
+        </div>
+        <h3>OGP設定</h3>
+        <p>
+          OGP(記事をSNS等でシェアした際のタイトルや画像、説明文)を記事の筆者が個別に設定できるようにしました。
+        </p>
+        {/* ここに画像1枚おく */}
+        <h3>動画プレーヤーの差し込み</h3>
+        <p>
+          サイト上にYouTubeプレイヤーを表示できます。
+          <br />
+          イベント時にその生放送を流すなどの使い方ができます。
+        </p>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "100%" }}
+            src={require("./images/touhou/movie_player.gif")}
+            alt="動画プレーヤー."
+          />
+        </div>
+        <h3>Twitter等の埋め込み</h3>
+        <p>
+          記事内にTwitterやニコニコ動画、Youtubeの埋め込みができます。
+            </p>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "100%" }}
+            src={require("./images/touhou/widget.png")}
+            alt="コンテンツの埋め込み."
+          />
+        </div>
+        <h3>イラストギャラリー</h3>
+        <p>
+          小説のページにイラストを挿入した場合、自動でイラストギャラリーを生成します。
+        </p>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "49%" }}
+            src={require("./images/touhou/illust_gallery_1.png")}
+            alt="イラストギャラリー."
+          />
+          <img
+            style={{ maxWidth: "49%" }}
+            src={require("./images/touhou/custom_2.png")}
+            alt="共有の様子."
+          />
+        </div>
+        <h3>高いデザイン性</h3>
+        <p>
+          弊社のデザイナーの力で、美しいデザインを実現しました。
+        </p>
+        <div style={{ flexDirection: "row" }}>
+          <img
+            style={{ maxWidth: "100%" }}
+            src={require("./images/touhou/title_hanko.gif")}
+            alt="タイトルロゴを判子で作成."
+          />
+        </div>
+        <h2>リンク</h2>
+        <p>
+          東方我楽多叢誌
+          <br />
+          <a href="https://touhougarakuta.com">https://touhougarakuta.com</a>
+        </p>
+        <p>
+          公式Twitter
+          <br />
+          <a href="https://twitter.com/touhou_station">https://twitter.com/touhou_station</a>
+        </p>
+        < h2 >お客様の声</h2 >
+        <blockquote>
+          要件定義からあらゆることに付き合って頂きました。技術そのもののみならず、コンテンツについても理解と熱意を持って一緒にサイトを作り上げてくれました。コンテンツについて一緒に考えてくれる制作会社は稀有なので、非常におすすめできます。
+          <br />
+          株式会社ワイソーシリアス 代表 斉藤大地
+        </blockquote>
+        <a
+          className="button"
+          href="https://touhougarakuta.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          東方我楽多叢誌 へ
+        </a>
+      </>
+    )
+  },
+  {
     id: "niramekko",
     title: "ヤングアニマルZERO連載漫画「ニラメッコ」EXITコラボ動画",
     image: require("./images/niramekko/main.png"),
