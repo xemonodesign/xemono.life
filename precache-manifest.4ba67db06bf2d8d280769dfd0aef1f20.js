@@ -1,27 +1,35 @@
 self.__precacheManifest = [
   {
-    "revision": "a4bf9f8e6fb4aabff19a",
+    "revision": "c8f03857f5b07c6eb27a",
     "url": "/static/css/main.c94ab504.chunk.css"
   },
   {
-    "revision": "a4bf9f8e6fb4aabff19a",
-    "url": "/static/js/main.397197cf.chunk.js"
+    "revision": "c8f03857f5b07c6eb27a",
+    "url": "/static/js/main.c6bd9ac2.chunk.js"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.c5541365.js"
   },
   {
-    "revision": "21fe1143fc274dbef28d",
+    "revision": "c583c71a2eb538f7c419",
     "url": "/static/css/2.242cbcc9.chunk.css"
   },
   {
-    "revision": "21fe1143fc274dbef28d",
-    "url": "/static/js/2.c9d602f7.chunk.js"
+    "revision": "c583c71a2eb538f7c419",
+    "url": "/static/js/2.c14f65e7.chunk.js"
   },
   {
     "revision": "73d510d4a047ed09e45d86b888c595f6",
     "url": "/static/media/cover.73d510d4.png"
+  },
+  {
+    "revision": "7ea33267e68147a72f3c0c3bc8971723",
+    "url": "/static/media/badge.7ea33267.jpeg"
+  },
+  {
+    "revision": "864d228484ef67c5dae4487dcc269335",
+    "url": "/static/media/shirt.864d2284.jpeg"
   },
   {
     "revision": "b46fd460f941b939ee6e8ff04b27ecac",
@@ -110,6 +118,38 @@ self.__precacheManifest = [
   {
     "revision": "5fcd735b1046fd0b73715fa8a1831119",
     "url": "/static/media/news20190401.5fcd735b.png"
+  },
+  {
+    "revision": "78fe232a174549df028d2339ce14dc14",
+    "url": "/static/media/badge_cover.78fe232a.png"
+  },
+  {
+    "revision": "28aee29d03d7ab2325cc8a50b68fa4d9",
+    "url": "/static/media/SHEbadge_plan_1.28aee29d.jpeg"
+  },
+  {
+    "revision": "5d5e2eb7067f936d53d522c2186dd239",
+    "url": "/static/media/SHEbadge_plan_2.5d5e2eb7.jpeg"
+  },
+  {
+    "revision": "622662f1a68b60e55f0e18c6fcb08fd7",
+    "url": "/static/media/SHEbadge_plan_3.622662f1.jpeg"
+  },
+  {
+    "revision": "346f9eeff49d8cb8e87f83a1406a27eb",
+    "url": "/static/media/breadbadge_plan_1.346f9eef.jpeg"
+  },
+  {
+    "revision": "84fd9d665ece8d0d4448f0d1d88504e4",
+    "url": "/static/media/breadbadge_plan_2.84fd9d66.png"
+  },
+  {
+    "revision": "d68fbd4f4d524e93c66beeb94e89a4c9",
+    "url": "/static/media/shirt_plan_1.d68fbd4f.png"
+  },
+  {
+    "revision": "fbdd57acea2c89f4a5bc2e5b884a8f32",
+    "url": "/static/media/shirt_plan_2.fbdd57ac.png"
   },
   {
     "revision": "e23c5edf9643d2cbe666f9cc97496f94",
@@ -224,7 +264,7 @@ self.__precacheManifest = [
     "url": "/static/media/thinkthink_laser.8342b978.gif"
   },
   {
-    "revision": "4e90832428cbe1921b2ac87bc8fdc922",
+    "revision": "c5e2f93001bc1e0c7457dc1fcac35d60",
     "url": "/index.html"
   }
 ];
