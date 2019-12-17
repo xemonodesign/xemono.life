@@ -9,6 +9,51 @@ import "./App.css";
 import Slide from "./components/Slide";
 const NEWS = [
   {
+    type: "link",
+    id: "20191217",
+    date: "2019.12.17",
+    title:
+      "代表のブログ記事「​​なぜデザイン会社が本と映画のラジオをやるのか」が公開されました",
+    link: "https://note.com/xemono/n/n474041898b35",
+    image: require("./images/news20191217.png")
+  },
+  {
+    type: "link",
+    id: "20191211",
+    date: "2019.12.11",
+    title:
+      "弊社提供のpodcast「落丁ラジオ」の第一回が公開されました",
+    link: "https://anchor.fm/rakcho",
+    image: require("./images/news20191211.png")
+  },
+  {
+    type: "link",
+    id: "20191105",
+    date: "2019.11.05",
+    title:
+      "代表のブログ記事「小さい会社で辛くない方の労働をやる」が公開されました",
+    link: "https://note.com/xemono/n/nc6808898c942",
+    image: require("./images/news20191105.png")
+  },
+  {
+    type: "link",
+    id: "20191004",
+    date: "2019.10.04",
+    title:
+      "東方我楽多叢誌が公開されました",
+    link: "https://touhougarakuta.com/",
+    image: require("./images/news20191004.jpg")
+  },
+  {
+    type: "link",
+    id: "20190829",
+    date: "2019.08.29",
+    title:
+      "代表のブログ記事「​​会社を作って4ヶ月でわかったこと」が公開されました",
+    link: "https://note.com/xemono/n/nc5f404fed132",
+    image: require("./images/news20190829.jpg")
+  },
+  {
     type: "entry",
     id: "20190801",
     date: "2019.08.01",
@@ -266,11 +311,11 @@ export const NewsList = () => (
               <span className="title">{news.title}</span>
             </Link>
           ) : (
-            <a href={news.link}>
-              <span className="date bold">{news.date}</span>
-              <span className="title">{news.title}</span>
-            </a>
-          )}
+              <a href={news.link}>
+                <span className="date bold">{news.date}</span>
+                <span className="title">{news.title}</span>
+              </a>
+            )}
         </li>
       ))}
     </ul>
@@ -291,14 +336,14 @@ export const NewsBoxes = () => (
               </div>
             </Link>
           ) : (
-            <a href={news.link}>
-              <div className="flex-column">
-                <span className="date bold right">{news.date}</span>
-                <img alt="" src={news.image} />
-                <span className="title">{news.title}</span>
-              </div>
-            </a>
-          )}
+              <a href={news.link}>
+                <div className="flex-column">
+                  <span className="date bold right">{news.date}</span>
+                  <img alt="" src={news.image} />
+                  <span className="title">{news.title}</span>
+                </div>
+              </a>
+            )}
         </div>
       ))}
     </div>
