@@ -9,6 +9,160 @@ import "./App.css";
 
 const PROJECTS = [
   {
+    id: "feminist",
+    title: "フェミニストバッジ＆Tシャツ",
+    image: require("./images/feminist/badge_cover.png"),
+    excerpt: (
+      <>
+        <p>
+          フェミニストのためのグッズとして、バッジ二種とTシャツ一種のデザインを請け負いました。
+        </p>
+      </>
+    ),
+    content: (
+      <>
+        <div class="feminist">
+          <ul>
+            <li>協力期間:2019年8月 ~</li>
+            <li>カテゴリ:グッズデザイン</li>
+            <li>ディレクション:とりいめぐみ</li>
+            <li>デザイン:庭石</li>
+          </ul>
+          <p>
+            フェミニストのためのグッズとして、バッジ二種とTシャツ一種のデザインを請け負いました。
+          </p>
+          <h2>ご依頼内容</h2>
+          <p>
+            ご依頼は、“steady as she goes”および”I am a
+            breadwinner“という標語を掲げたバッジを作ってほしいとのことでした。
+            <br />
+            “steady as she
+            goes”の方はスタートレックのようなレトロSF風の雰囲気で、スピード感のある影をつけてほしいというご指定、”I
+            am a breadwinner“の方はデザイン指定なしでした。
+            <br />
+            結果的に、”I am a
+            breadwinner“のバッジのデザイン案としてご提案したもののうちから二種類を気に入ってくださり、そちらはTシャツにしたいと言っていただきました。
+          </p>
+          <div style={{ flexDirection: "row" }}>
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/badge.jpeg")}
+              alt="バッジ."
+            />
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/shirt.jpeg")}
+              alt="シャツ."
+            />
+          </div>
+          <h2>①“steady as she goes”バッジ</h2>
+          <p>
+            この標語は本来航海用語で、「針路を保て」「そのまま直進」という意味です。船を指す”she”をここでは女性にかけ、女性たちに自分の望む道を進むよう呼びかける標語です。
+            <br />
+            ご依頼者にとってそれがどういう言葉なのか、そのメッセージ内容とビジュアルイメージがご本人の中でどう繋がっているのかを考え、具体化することを意識しました。
+            <br />
+            レトロSF風のものだけでなく、宇宙をイメージさせるより現代的な雰囲気のものや、船をモチーフとしたものなどを取り混ぜていくつかご提案しました。
+            <br />
+            何パターンかヴァリエーションを揃えてご提案し、その中からお選びになる傾向を見て、ご希望の方向性を絞り込み、更にご提案をしていきました。
+            <br />
+            その中で、スケールの大きいもの、堂々としたもの、スピード感のあるものというお好みがあることが見えてきたので、それを具体化することを心がけて作っています。
+          </p>
+          <div style={{ flexDirection: "row" }}>
+            <img
+              style={{ maxWidth: "100%" }}
+              src={require("./images/feminist/SHEbadge_plan_1.jpeg")}
+              alt="steady as she goesバッジの案1."
+            />
+          </div>
+          <div style={{ flexDirection: "row" }}>
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/SHEbadge_plan_2.jpeg")}
+              alt="steady as she goesバッジの案2."
+            />
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/SHEbadge_plan_3.jpeg")}
+              alt="steady as she goesバッジの案3."
+            />
+          </div>
+
+          <h2>②”I am a breadwinner“バッジ</h2>
+          <p>
+            “breadwinner”とは稼ぎ手、大黒柱のことです。一家の大黒柱と言えば男性がイメージされがちですが、女性が自らの食い扶持を稼いでいることを称揚する標語です。
+            <br />
+            こちらもメッセージ内容への理解を深め、それを具体化することに努めました。
+            <br />
+            デザインは自由にとのことだったので、文字だけのもの、（“bread”なので）パンをモチーフにしたもの、（パンのかわいらしいイメージから）かわいいもの、自分自身が稼ぎ手であるという誇りが表せるように勲章風にしたもの、小麦をモチーフにした装飾のあるもの、（“winner”=「勝者」のイメージから）古代風のものなど幅広い案をお出ししました。
+            <br />
+            かわいいデザインのものが選ばれたので、かわいくてゆるい雰囲気を出せるよう、文字を手書きにして色もシンプルにしています。
+          </p>
+          <div style={{ flexDirection: "row" }}>
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/breadbadge_plan_1.jpeg")}
+              alt="I am a breadwinner バッジの案1."
+            />
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/breadbadge_plan_2.png")}
+              alt="I am a breadwinner バッジの案2."
+            />{" "}
+          </div>
+          <h2>③”I am a breadwinner“Tシャツ</h2>
+          <p>
+            ”I am a
+            breadwinner“バッジのデザイン案のひとつとして、旗を掲げた女神を出したところ、その柄でTシャツを作ることが決まりました。
+            <br />
+            誇り高い雰囲気と格調が出せるよう、フォント選びにも心を配りました。
+            <br />
+            また、計三種類のグッズができることになるので、買い手の方々がその中からご自分のお好みに合ったものを選べるよう、雰囲気にヴァリエーションをつけることを意識しています。
+          </p>
+          <div style={{ flexDirection: "row" }}>
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/shirt_plan_1.png")}
+              alt="Tシャツの案1."
+            />
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/shirt_plan_2.png")}
+              alt="Tシャツの案2."
+            />
+          </div>
+          <p>
+            いずれのデザインも、絵柄と文字が決まってからは多彩なカラーリングの選択肢をご用意し、そこから選んでいただきました。
+            <br />
+            デザインのステップを進めるごとに様々なパターンをご提案することで、ご希望に沿ったものができたと思っていただけるよう心がけています。
+            <br />
+            データを見ていただくだけでなく、実際に印刷してバッジのサンプルに貼り付けたものを制作し、実物になった時のイメージを持てるようにして見ていただきました。
+          </p>
+          <p>
+            いずれのグッズも、メッセージ内容を考えて、ご依頼者の方が楽しんで堂々と着けられるよう心がけて作りました。
+          </p>
+          <div style={{ flexDirection: "row" }}>
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/badge.jpeg")}
+              alt="バッジ."
+            />
+            <img
+              style={{ maxWidth: "49%" }}
+              src={require("./images/feminist/shirt.jpeg")}
+              alt="シャツ."
+            />
+          </div>
+          <h2>発注者からのコメント</h2>
+          <blockquote>
+            <p>
+              ほぼ丸投げの発注を素敵な作品にしていただきありがとうございました。スローガンの意図をしっかりと考えてくださり大変嬉しいです。図案を多数出していただいたほか背景・色味等のパターン要望にも対応していただき、コミュニケーションをとりながら納得がいくまでデザインを練ることができました。またスローガン思いついたら発注します！
+            </p>
+          </blockquote>
+        </div>
+      </>
+    )
+  },
+  {
     id: "touhou",
     title: "東方我楽多叢誌",
     image: require("./images/touhou/main.png"),
@@ -31,24 +185,30 @@ const PROJECTS = [
             <li>ディレクション:とりいめぐみ</li>
             <li>デザイン:とりいめぐみ、いいづかやまと</li>
             <li>
-              イラスト:津倉冴（<a href="https://twitter.com/saetsukura">@saetsukura</a>）
+              イラスト:津倉冴（
+              <a href="https://twitter.com/saetsukura">@saetsukura</a>）
             </li>
-            <li>コーディング:やなぎ（<a href="https://twitter.com/to4_yanagi">@to4_yanagi</a>、<a href="https://laughcraft.dev">Portfolio</a>）、かねこ（<a href="https://twitter.com/tronperidot">@tronperidot</a>）、るか</li>
+            <li>
+              コーディング:やなぎ（
+              <a href="https://twitter.com/to4_yanagi">@to4_yanagi</a>、
+              <a href="https://laughcraft.dev">Portfolio</a>）、かねこ（
+              <a href="https://twitter.com/tronperidot">@tronperidot</a>）、るか
+            </li>
             <li>ロゴはんこ作成:庭石</li>
             <li>メディア運営:株式会社ワイソーシリアス</li>
           </ul>
           <p>
             ウェブメディア「東方我楽多叢誌」のプラットフォーム作成を請け負いました。
-          <br />
+            <br />
             「東方Projectらしさ」を全力で表現するとともに、高機能かつ爆速のサイトと管理のしやすさを両立させました。
-          <br />
+            <br />
           </p>
           <p>
             管理者が見慣れた画面で快適に記事を投稿・管理できるよう、基本的なシステムはWordPressを用いつつ、高機能かつ爆速のサイトを実現するためにシステムを大幅に換骨奪胎
-        </p>
+          </p>
           <p>
             東方Projectは「青春を捧げた」ファンも多いとても力のあるIPですが、そんなファンの皆様に楽しんでいただけるよう、隅々まで「東方らしさ」にこだわったデザインを施しました。
-        </p>
+          </p>
           <div style={{ flexDirection: "row" }}>
             <img
               style={{ maxWidth: "100%" }}
@@ -62,21 +222,21 @@ const PROJECTS = [
           <h3>多言語化対応</h3>
           <p>
             中国語版サイト、英語版サイトなど、言語ごとにサイトを複数同時に立てられ、一括に管理できる仕組みを作りました。
-          <br />
+            <br />
             言語ごとに違うサイトを一から作る必要がなく、簡単に多言語に対応できます。
-          <br />
+            <br />
             例1:記事の翻訳を他言語版に載せる際、写真は同じものを使いたい
-          <br />
+            <br />
             例2:特定の記事を中国語サイトにだけ表示させたい
-          <br />
+            <br />
             といったことが簡単にできます。
-        </p>
+          </p>
           <h3>カスタム投稿タイプ</h3>
           <p>
             WordPressはデフォルトでは投稿できる記事の種類が少ないため、大幅な拡張を行い、要望に合わせて様々な欄を設けました。
-          <br />
+            <br />
             小説、インタビュー、漫画、キャラ紹介ページなどを作成しました。
-        </p>
+          </p>
           <div style={{ flexDirection: "row" }}>
             <img
               style={{ maxWidth: "49%" }}
@@ -102,9 +262,9 @@ const PROJECTS = [
           <h3>下書きプレビュー機能</h3>
           <p>
             このカスタマイズに合わせて、下書きプレビュー機能を改善しました。
-          <br />
+            <br />
             記事を公開する前に、本番サイトでの見え方を確認できます。
-        </p>
+          </p>
           <div style={{ flexDirection: "row" }}>
             <img
               style={{ maxWidth: "100%" }}
@@ -115,13 +275,13 @@ const PROJECTS = [
           <h3>広告表示</h3>
           <p>
             広告を設定できるようにしました。
-          <br />
+            <br />
             差し込み型広告や全面広告など、自由な型の広告を表示できます。
-        </p>
+          </p>
           <h3>アナリティクス</h3>
           <p>
             サイトへの集客やページビュー、広告クリックなどの情報を収集して分析できます。
-        </p>
+          </p>
           <h3>SEO</h3>
           <p>SEOの知見を活かし、検索で上位に出てくるページを作りました。</p>
           <div style={{ flexDirection: "row" }}>
@@ -134,14 +294,14 @@ const PROJECTS = [
           <h3>OGP設定</h3>
           <p>
             OGP(記事をSNS等でシェアした際のタイトルや画像、説明文)を記事の筆者が個別に設定できるようにしました。
-        </p>
+          </p>
           {/* ここに画像1枚おく */}
           <h3>動画プレーヤーの差し込み</h3>
           <p>
             サイト上にYouTubeプレイヤーを表示できます。
-          <br />
+            <br />
             イベント時にその生放送を流すなどの使い方ができます。
-        </p>
+          </p>
           <div style={{ flexDirection: "row" }}>
             <img
               style={{ maxWidth: "100%" }}
@@ -161,7 +321,7 @@ const PROJECTS = [
           <h3>イラストギャラリー</h3>
           <p>
             小説のページにイラストを挿入した場合、自動でイラストギャラリーを生成します。
-        </p>
+          </p>
           <div style={{ flexDirection: "row" }}>
             <img
               style={{ maxWidth: "49%" }}
@@ -185,7 +345,9 @@ const PROJECTS = [
           </div>
           <h2>お客様の声</h2>
           <blockquote>
-            <p>要件定義からあらゆることに付き合って頂きました。技術そのもののみならず、コンテンツについても理解と熱意を持って一緒にサイトを作り上げてくれました。コンテンツについて一緒に考えてくれる制作会社は稀有なので、非常におすすめできます。</p>
+            <p>
+              要件定義からあらゆることに付き合って頂きました。技術そのもののみならず、コンテンツについても理解と熱意を持って一緒にサイトを作り上げてくれました。コンテンツについて一緒に考えてくれる制作会社は稀有なので、非常におすすめできます。
+            </p>
             <p>株式会社ワイソーシリアス 代表 斉藤大地</p>
           </blockquote>
           <a
@@ -195,7 +357,7 @@ const PROJECTS = [
             rel="noopener noreferrer"
           >
             東方我楽多叢誌 へ
-        </a>
+          </a>
           <a
             className="button"
             href="https://twitter.com/touhou_station"
@@ -203,7 +365,7 @@ const PROJECTS = [
             rel="noopener noreferrer"
           >
             公式Twitter （@touhou_station）
-        </a>
+          </a>
         </div>
       </>
     )
