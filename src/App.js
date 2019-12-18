@@ -149,7 +149,7 @@ const Home = () => (
       <FlexBox>
         <div style={{ flex: 2 }}>
           <h2 className="text-large text-black">副社長　かわの</h2>
-          <p style={{ textAlign: "left" }}>1991年生。歌人</p>
+          <p style={{ textAlign: "left" }}>1991年生。歌人、小説家。</p>
           <p style={{ textAlign: "left" }}>
             ものごころついたときから小説を書き始めた。文章を読むことと書くこと以外何もしたことがない。
           </p>
