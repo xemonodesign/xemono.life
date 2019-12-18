@@ -132,7 +132,7 @@ const Home = () => (
           </p>
           <p style={{ textAlign: "left" }}>性格はとてもいい。</p>
           <h3>副社長からの紹介</h3>
-          <blockquote class="twitter-tweet" data-lang="ja">
+          <blockquote className="twitter-tweet" data-lang="ja">
             <p lang="ja" dir="ltr">
               鳥居の才能の一番稀有なものは面白がる才能。
               <br />
@@ -170,7 +170,7 @@ const Home = () => (
             好きなものは言葉。得意なことは人が何を言おうとしているのか理解すること。好きな映画は「大いなる沈黙へ」。好きな作家はトールキン、ダンセイニ、タニス・リー、シャーリィ・ジャクスン、ルルフォ、山尾悠子、皆川博子など。苦手なものは自己紹介。
           </p>
           <h3>社長からの紹介</h3>
-          <blockquote class="twitter-tweet" data-lang="ja">
+          <blockquote className="twitter-tweet" data-lang="ja">
             <p lang="ja" dir="ltr">
               人と言葉が対立する時ってあるんですよ。
               <br />
