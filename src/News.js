@@ -26,18 +26,30 @@ const NEWS = [
         <p>
           すでに歌人として活躍中の川野芽生の小説家デビュー作、他の新進気鋭の作家たちの7作とともにぜひお求めください。
         </p>
-        <p>
-          最新情報はこちら→
-          <a href="https://twitter.com/megumikawano_">
-            https://twitter.com/megumikawano_
-          </a>
-        </p>
-        <p>
-          東京創元社公式リンクはこちら→
-          <a href="http://www.tsogen.co.jp/np/isbn/9784488018399">
-            http://www.tsogen.co.jp/np/isbn/9784488018399
-          </a>
-        </p>
+        <a
+          className="button"
+          href="https://twitter.com/megumikawano_"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          最新情報はこちら
+        </a>
+        <a
+          className="button"
+          href="http://www.tsogen.co.jp/np/isbn/9784488018399"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          東京創元社公式リンクはこちら
+        </a>
+        <a
+          className="button"
+          href="https://www.amazon.co.jp/gp/product/4488018394/ref=as_li_tl?ie=UTF8&tag=kinakobooster-22&camp=247&creative=1211&linkCode=as2&creativeASIN=4488018394&linkId=d45a790e28ec30e09acc77d64ed0ae8b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Amazonでの購入はこちら
+        </a>
       </>
     ),
     image: require("./images/news20191219.png")
