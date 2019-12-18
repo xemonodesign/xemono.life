@@ -21,7 +21,7 @@ const PROJECTS = [
     ),
     content: (
       <>
-        <div class="feminist">
+        <div className="feminist">
           <ul>
             <li>協力期間:2019年8月 ~</li>
             <li>カテゴリ:グッズデザイン</li>
@@ -178,7 +178,7 @@ const PROJECTS = [
     ),
     content: (
       <>
-        <div class="touhou">
+        <div className="touhou">
           <ul>
             <li>協力期間:2019年7月 ~</li>
             <li>カテゴリ:ウェブメディア+CMS</li>

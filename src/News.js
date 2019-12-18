@@ -9,6 +9,52 @@ import "./App.css";
 import Slide from "./components/Slide";
 const NEWS = [
   {
+    type: "entry",
+    id: "20191219",
+    date: "2019.12.19",
+    title:
+      "副社長の商業小説デビュー作「白昼夢通信」が『Ｇｅｎｅｓｉｓ　白昼夢通信 創元日本ＳＦアンソロジー２』に掲載されます",
+    content: (
+      <>
+        <p>
+          2019年12月20日、弊社副社長の川野芽生の小説「白昼夢通信」が掲載された書籍『Ｇｅｎｅｓｉｓ　白昼夢通信
+          創元日本ＳＦアンソロジー２』が全国書店で発売されます。
+        </p>
+        <p>
+          SFアンソロジーの表題作となった本作は、地上からほんの少し浮き上がったような日常を幻想的な文体で綴った書簡体小説です。
+        </p>
+        <p>
+          すでに歌人として活躍中の川野芽生の小説家デビュー作、他の新進気鋭の作家たちの7作とともにぜひお求めください。
+        </p>
+        <a
+          className="button"
+          href="https://twitter.com/megumikawano_"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          最新情報はこちら
+        </a>
+        <a
+          className="button"
+          href="http://www.tsogen.co.jp/np/isbn/9784488018399"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          東京創元社公式リンクはこちら
+        </a>
+        <a
+          className="button"
+          href="https://www.amazon.co.jp/gp/product/4488018394/ref=as_li_tl?ie=UTF8&tag=kinakobooster-22&camp=247&creative=1211&linkCode=as2&creativeASIN=4488018394&linkId=d45a790e28ec30e09acc77d64ed0ae8b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Amazonでの購入はこちら
+        </a>
+      </>
+    ),
+    image: require("./images/news20191219.png")
+  },
+  {
     type: "link",
     id: "20191217",
     date: "2019.12.17",
@@ -21,8 +67,7 @@ const NEWS = [
     type: "link",
     id: "20191211",
     date: "2019.12.11",
-    title:
-      "弊社提供のpodcast「落丁ラジオ」の第一回が公開されました",
+    title: "弊社提供のpodcast「落丁ラジオ」の第一回が公開されました",
     link: "https://anchor.fm/rakcho",
     image: require("./images/news20191211.png")
   },
@@ -39,8 +84,7 @@ const NEWS = [
     type: "link",
     id: "20191004",
     date: "2019.10.04",
-    title:
-      "東方我楽多叢誌が公開されました",
+    title: "東方我楽多叢誌が公開されました",
     link: "https://touhougarakuta.com/",
     image: require("./images/news20191004.jpg")
   },
@@ -311,11 +355,11 @@ export const NewsList = () => (
               <span className="title">{news.title}</span>
             </Link>
           ) : (
-              <a href={news.link}>
-                <span className="date bold">{news.date}</span>
-                <span className="title">{news.title}</span>
-              </a>
-            )}
+            <a href={news.link}>
+              <span className="date bold">{news.date}</span>
+              <span className="title">{news.title}</span>
+            </a>
+          )}
         </li>
       ))}
     </ul>
@@ -336,14 +380,14 @@ export const NewsBoxes = () => (
               </div>
             </Link>
           ) : (
-              <a href={news.link}>
-                <div className="flex-column">
-                  <span className="date bold right">{news.date}</span>
-                  <img alt="" src={news.image} />
-                  <span className="title">{news.title}</span>
-                </div>
-              </a>
-            )}
+            <a href={news.link}>
+              <div className="flex-column">
+                <span className="date bold right">{news.date}</span>
+                <img alt="" src={news.image} />
+                <span className="title">{news.title}</span>
+              </div>
+            </a>
+          )}
         </div>
       ))}
     </div>
