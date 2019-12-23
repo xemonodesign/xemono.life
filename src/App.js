@@ -15,6 +15,7 @@ import News, { NewsList, NewsBoxes } from "./News";
 import Skills from "./Skills";
 import WorkWith from "./WorkWith";
 import Projects, { ProjectsBoxes } from "./Projects";
+import Privacy from "./Privacy";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -36,6 +37,7 @@ const App = () => (
         <Route path="/skills/:id" component={Skills} />
         <Route path="/workwith/:id" component={WorkWith} />
         <Route path="/projects/:id" component={Projects} />
+        <Route path="/privacy/" component={Privacy} />
       </Switch>
       <Footer />
     </ScrollToTop>
