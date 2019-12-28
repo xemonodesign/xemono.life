@@ -8,6 +8,31 @@ import Helmet from "react-helmet";
 import "./App.css";
 import Slide from "./components/Slide";
 const NEWS = [
+    {
+    type: "link",
+    id: "20191226",
+    date: "2019.12.26",
+    title:
+      "podcast「落丁ラジオ」第二話「『ずっとお城で暮らしてる』と『MAMA』」公開",
+    link: "https://anchor.fm/rakcho",
+    image: require("./images/news20191211.png")
+  },  {
+    type: "link",
+    id: "20191223b",
+    date: "2019.12.23",
+    title:
+      "フローチャート式コンテンツサジェストサービス「numaflow」のLPが公開",
+    link: "https://numacinema.xemono.life/lp/",
+    image: require("./images/news20191223b.png")
+  },  {
+    type: "link",
+    id: "20191223a",
+    date: "2019.12.23",
+    title:
+      "「現実逃避映画診断」が公開",
+    link: "https://numacinema.xemono.life/#/",
+    image: require("./images/news20191223a.png")
+  },
   {
     type: "entry",
     id: "20191219",
@@ -59,7 +84,7 @@ const NEWS = [
     id: "20191217",
     date: "2019.12.17",
     title:
-      "代表のブログ記事「​​なぜデザイン会社が本と映画のラジオをやるのか」が公開されました",
+      "代表のブログ記事「​​なぜデザイン会社が本と映画のラジオをやるのか」が公開",
     link: "https://note.com/xemono/n/n474041898b35",
     image: require("./images/news20191217.png")
   },
@@ -67,7 +92,7 @@ const NEWS = [
     type: "link",
     id: "20191211",
     date: "2019.12.11",
-    title: "弊社提供のpodcast「落丁ラジオ」の第一回が公開されました",
+    title: "弊社提供のpodcast「落丁ラジオ」の第一回が公開",
     link: "https://anchor.fm/rakcho",
     image: require("./images/news20191211.png")
   },
@@ -76,7 +101,7 @@ const NEWS = [
     id: "20191105",
     date: "2019.11.05",
     title:
-      "代表のブログ記事「小さい会社で辛くない方の労働をやる」が公開されました",
+      "代表のブログ記事「小さい会社で辛くない方の労働をやる」が公開",
     link: "https://note.com/xemono/n/nc6808898c942",
     image: require("./images/news20191105.png")
   },
@@ -84,7 +109,7 @@ const NEWS = [
     type: "link",
     id: "20191004",
     date: "2019.10.04",
-    title: "東方我楽多叢誌が公開されました",
+    title: "弊社デザインのウェブサイト「東方我楽多叢誌」が公開",
     link: "https://touhougarakuta.com/",
     image: require("./images/news20191004.jpg")
   },
@@ -93,7 +118,7 @@ const NEWS = [
     id: "20190829",
     date: "2019.08.29",
     title:
-      "代表のブログ記事「​​会社を作って4ヶ月でわかったこと」が公開されました",
+      "代表のブログ記事「​​会社を作って4ヶ月でわかったこと」が公開",
     link: "https://note.com/xemono/n/nc5f404fed132",
     image: require("./images/news20190829.jpg")
   },
@@ -102,7 +127,7 @@ const NEWS = [
     id: "20190801",
     date: "2019.08.01",
     title:
-      "株式会社白泉社様から、「ニラメッコ」EXITコラボネタ動画が三本公開されました",
+      "株式会社白泉社様から、「ニラメッコ」EXITコラボネタ動画が三本公開",
     content: (
       <>
         株式会社白泉社様から、「ニラメッコ」EXITコラボネタ動画が三本公開されました。
@@ -146,7 +171,7 @@ const NEWS = [
     id: "20190723",
     date: "2019.07.23",
     title:
-      "株式会社白泉社様から、「ニラメッコ」EXITコラボ紹介動画が二本公開されました",
+      "株式会社白泉社様から、「ニラメッコ」EXITコラボ紹介動画が二本公開",
     content: (
       <>
         株式会社白泉社様から、「ニラメッコ」EXITコラボ紹介動画が二本公開されました。
@@ -182,7 +207,7 @@ const NEWS = [
     id: "20190708",
     date: "2019.07.08",
     title:
-      "日鉄ソリューションズ株式会社様にて、デザイン基礎講座・スライド添削ワークショップを行いました",
+      "日鉄ソリューションズ株式会社様にて、デザイン基礎講座・スライド添削ワークショップを実施",
     content: (
       <>
         <p>
@@ -210,7 +235,7 @@ const NEWS = [
     id: "20190706",
     date: "2019.07.06",
     title:
-      "株式会社白泉社様から、「不祥事アイドル」のPR動画二本が公開されました",
+      "株式会社白泉社様から、「不祥事アイドル」のPR動画二本が公開",
     content: (
       <>
         株式会社白泉社様から、「不祥事アイドル」のPR動画二本が公開されました。
@@ -233,7 +258,7 @@ const NEWS = [
     id: "20190508",
     date: "2019.05.08",
     title:
-      "株式会社gumi様にて第三回デザインの基礎講座（UX編・最終回）をデザイン未経験のプログラマーのために行いました",
+      "株式会社gumi様にて第三回デザインの基礎講座（UX編・最終回）をデザイン未経験のプログラマーのために実施",
     content: (
       <>
         株式会社gumi様にてデザイン未経験のプログラマー向けに講座の第三回を行いました。
@@ -256,7 +281,7 @@ const NEWS = [
     id: "20190423",
     date: "2019.04.23",
     title:
-      "株式会社gumi様にて第二回デザインの基礎講座（UI編）をデザイン未経験のプログラマーのために行いました",
+      "株式会社gumi様にて第二回デザインの基礎講座（UI編）をデザイン未経験のプログラマーのために実施",
     content: (
       <>
         株式会社gumi様にてデザイン未経験のプログラマー向けに講座の第二回を行いました。
@@ -279,7 +304,7 @@ const NEWS = [
     id: "20190418",
     date: "2019.04.18",
     title:
-      "株式会社gumi様にて第一回デザインの基礎講座をデザイン未経験のプログラマーのために行いました",
+      "株式会社gumi様にて第一回デザインの基礎講座をデザイン未経験のプログラマーのために実施",
     content: (
       <>
         株式会社gumi様にてデザイン未経験のプログラマー向けに講座の第一回を行いました。
@@ -309,7 +334,7 @@ const NEWS = [
     id: "20190411",
     date: "2019.04.11",
     title:
-      "代表のブログ記事「UIデザイナーがアイコン一種完成させるまでに考えること」が公開されました",
+      "代表のブログ記事「UIデザイナーがアイコン一種完成させるまでに考えること」が公開",
     link: "https://note.mu/xemono/n/nd7b696b78702",
     image: require("./images/news20190411.png")
   },
@@ -318,7 +343,7 @@ const NEWS = [
     id: "20190406",
     date: "2019.04.06",
     title:
-      "代表のブログ記事「社会はマジでヤバイと思ってるけど会社作ります」が公開されました",
+      "代表のブログ記事「社会はマジでヤバイと思ってるけど会社作ります」が公開",
     link: "http://noubrain.hateblo.jp/entry/2019/04/05/171255",
     image: require("./images/news20190406.png")
   },
