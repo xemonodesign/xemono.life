@@ -1,27 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "9afae0e33e272334e42d",
-    "url": "/static/css/main.a5ab1e9d.chunk.css"
+    "revision": "c1903083c880e6c0fbac",
+    "url": "/static/css/main.b32e1311.chunk.css"
   },
   {
-    "revision": "9afae0e33e272334e42d",
-    "url": "/static/js/main.83ed6d52.chunk.js"
+    "revision": "c1903083c880e6c0fbac",
+    "url": "/static/js/main.0340cfd9.chunk.js"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.c5541365.js"
   },
   {
-    "revision": "4214a8a97d6b2d7977ad",
+    "revision": "4f16065b19642af55edf",
     "url": "/static/css/2.63e9962a.chunk.css"
   },
   {
-    "revision": "4214a8a97d6b2d7977ad",
-    "url": "/static/js/2.c14f65e7.chunk.js"
+    "revision": "4f16065b19642af55edf",
+    "url": "/static/js/2.e77d3d22.chunk.js"
   },
   {
     "revision": "73d510d4a047ed09e45d86b888c595f6",
     "url": "/static/media/cover.73d510d4.png"
+  },
+  {
+    "revision": "a4b866193c3587d714f436ebe0a3f8d0",
+    "url": "/static/media/news20191211.a4b86619.png"
   },
   {
     "revision": "7ea33267e68147a72f3c0c3bc8971723",
@@ -60,16 +64,20 @@ self.__precacheManifest = [
     "url": "/static/media/xemono_icon_6.979b93f0.png"
   },
   {
+    "revision": "e0db6a4a9687324fa1f300704dd164f9",
+    "url": "/static/media/news20191223b.e0db6a4a.png"
+  },
+  {
+    "revision": "9da4d54b2a85a7c3e64e8508c05a41e6",
+    "url": "/static/media/news20191223a.9da4d54b.png"
+  },
+  {
     "revision": "e0a07f8a3358fa2a4d3b261a8a0d1162",
     "url": "/static/media/news20191219.e0a07f8a.png"
   },
   {
     "revision": "d61e57729a52b402c13a11ec6bbb9ed5",
     "url": "/static/media/news20191217.d61e5772.png"
-  },
-  {
-    "revision": "a4b866193c3587d714f436ebe0a3f8d0",
-    "url": "/static/media/news20191211.a4b86619.png"
   },
   {
     "revision": "97d2932154072285cb15296b6e06e00f",
@@ -124,8 +132,8 @@ self.__precacheManifest = [
     "url": "/static/media/news20190401.5fcd735b.png"
   },
   {
-    "revision": "78fe232a174549df028d2339ce14dc14",
-    "url": "/static/media/badge_cover.78fe232a.png"
+    "revision": "6fad2d9839067500b33ca8a35fd896a6",
+    "url": "/static/media/badge_cover.6fad2d98.png"
   },
   {
     "revision": "28aee29d03d7ab2325cc8a50b68fa4d9",
@@ -280,7 +288,7 @@ self.__precacheManifest = [
     "url": "/static/media/thinkthink_laser.8342b978.gif"
   },
   {
-    "revision": "c365cec9e0dc60044b31befb509ee871",
+    "revision": "8d4b0ae834d512566768d486b28eb9f5",
     "url": "/index.html"
   }
 ];
